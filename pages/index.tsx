@@ -9,12 +9,8 @@ export default function Home(props: any) {
     <Layout>
       <Head>
         <title>WeCode</title>
-        <meta name="description" content="WeCode is a leading Software Product Development Company that offers product engineering and software development services for startups & enterprises" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>{props.messages.greeting} WeCode</h1>
-      </main>
+      <h1>{props.messages.greeting} WeCode</h1>
     </Layout>
   )
 }

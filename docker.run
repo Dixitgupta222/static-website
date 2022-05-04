@@ -1,0 +1,12 @@
+#!/bin/bash
+docker build -t website .
+
+echo "Removing container if running..."
+docker rm -f website >/dev/null 2>&1
+
+echo "Starting container..."
+docker run -d \
+--name website \
+-p 3000:3000 \
+-v $(pwd):/var/log \
+website
