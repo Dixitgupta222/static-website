@@ -1,7 +1,25 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
-export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+// import Layout from '../layout/layout'
+function MyApp({ Component, pageProps }) {
+	// console.log(Component)
+	// color = will be tailwind class color or for custom wrtite like [#969600] this
+ 	const Layout = Component.PageLayout;
+	if (Layout)
+			if (Component.displayName === "Home"){
+				return(
+			<Layout color='[#000000]'>
+				<Component {...pageProps} />
+			</Layout>
+			);
+			}
+			else{
+			return (
+				<Layout color='[#000000]'>
+				<Component {...pageProps} />
+			</Layout>
+			);
+		}
+	return <Component {...pageProps} />;
 }
 
+export default MyApp;

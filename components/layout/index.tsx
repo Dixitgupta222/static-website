@@ -1,20 +1,19 @@
-import styles from "./index.module.css";
-import Head from 'next/head'
-import Header from "../header";
-import Footer from "../footer";
-
-export default function Layout({ children } : any) {
+import Header from '../header/index'
+import Footer from '../footer/index'
+import Head from "next/head";
+export default function Layout({ children,...props }) {
+  // console.log(props.color)
   return (
-    <div className={styles.container}>      
-      <Head>
-        <meta name="description" content="WeCode is a leading Software Product Development Company that offers product engineering and software development services for startups & enterprises" />
+    <>
+     <Head>
+        <title>Static Website</title>
+        <meta name="description" content="A simple Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <main className={styles.main}>
-        {children}
-      </main>
-      <Footer/>
-    </div>
+      <Header color={props.color}/>
+      {/* {props.color} */}
+      {children}
+      <Footer />
+    </>
   )
 }
