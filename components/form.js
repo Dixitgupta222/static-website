@@ -95,11 +95,11 @@ export default function Form(props) {
       </div>
       <div className={`col-span-full flex items-${props.align} flex-col`}>
        { isSubmitting ?
-        <p className={`text-center mx-auto md:mx-0 capitalize font-bold text-[20px] text-[${props.button}] border-[1px] border-[${props.button}] py-[12px] px-[48px] block w-fit  duration-150 cursor-pointer hover:bg-[${props.button}] hover:text-[${props.buttonhover}] focus-within:outline-none`}>
+        <p className={`text-center mx-auto md:mx-0 capitalize leading-normal font-bold text-[20px] text-[${props.button}] border-[1px] border-[${props.button}] py-[12px] px-[48px] block w-fit  duration-150 cursor-pointer hover:bg-[${props.button}] hover:text-[${props.buttonhover}] focus-within:outline-none`}>
           submitting
         </p>
         : <input
-     className={`text-center mt-4 mx-auto md:mx-0 uppercase font-bold text-[20px] text-[${props.button}] border-[1px] border-[${props.button}] py-[12px] px-[48px] block w-fit  duration-150 cursor-pointer hover:bg-[${props.button}] hover:text-[${props.buttonhover}] focus-within:outline-none`}
+     className={`text-center leading-normal mt-4 mx-auto md:mx-0 capitalize font-bold text-[20px] text-[${props.button}] border-[1px] border-[${props.button}] py-[12px] px-[48px] block w-fit  duration-150 cursor-pointer hover:bg-[${props.button}] hover:text-[${props.buttonhover}] focus-within:outline-none`}
      type="submit"
      value="submit"
    /> 

@@ -1,9 +1,10 @@
 import Link from "next/dist/client/link";
 import TechSlider from "../components/techSlider";
-import Gallary from "../components/gallary";
+// import Gallary from "../components/gallary";
 import Image from "next/image";
 import Layout from "../components/layout/index";
-import Experience from "../components/experience";
+// import Experience from "../components/experience";
+import Button from "../components/button";
 import Form from "../components/form";
 import BannerSlider from "../components/bannerSlider";
 import Review from "../components/reviewSlider";
@@ -139,12 +140,13 @@ export default function Home() {
         <div className="container mx-auto md:block hidden">
           <div className="grid md:grid-cols-12 gap-10">
             <div className="col-span-7 md:col-span-5 lg:col-start-9 flex flex-col justify-center order-2">
-              <div className="absolute w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[-1] -right-[5%] hidden md:block">
+              <div className="absolute w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[-1] -right-[5%] hidden md:grid">
                 <Image
                   src="/images/techbg.png"
-                  layout="responsive"
+                  layout='responsive'
                   width={100}
                   height={100}
+                  objectFit='contain'
                 />
               </div>
               <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
@@ -189,13 +191,13 @@ export default function Home() {
           </h3>
           <div className="grid  gap-5">
             <div className="">
-              <div className="duration-150 overflow-hidden group">
+              <div className="duration-150 overflow-hidden shadow-custom2 group">
                 <Link href="/">
-                  <a className="font-bold w-full block duration-150 shadow-custom2  hover:text-[#323232]">
+                  <a className="font-bold w-full block duration-150 hover:text-[#323232]">
                     <Image
                       src="/images/work5.png"
-                      layout="responsive"
-                      objectFit="cover"
+                      layout='responsive'
+                      objectFit='cover'
                       width={1000}
                       height={500}
                     />
@@ -205,23 +207,20 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 mx-auto w-fit">
-            <Link href="/">
-              <a className="font-bold text-[20px] text-[#ffffff] border-[1px] border-[#ffffff] py-[12px] px-[30px]  block w-fit duration-150 hover:bg-[#ffffff] hover:text-[#343434]">
-                View All
-              </a>
-            </Link>
+            <Button name="View All" url="/" type='light'/>
           </div>
         </div>
       </div>
       {/* Testimonial Section */}
       <div className="py-10 lg:py-28 lg:my-24 px-4 md:px-0 md:bg-[#ffffff] bg-[#EBF2FF] relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="absolute  w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[0] top-1/2 -translate-y-1/2 -left-[8%]">
+          <div className="absolute grid w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[0] top-1/2 -translate-y-1/2 -left-[8%]">
             <Image
               src="/images/aboutbg.png"
-              layout="responsive"
+              layout='responsive'
               width={100}
               height={100}
+              objectFit='contain'
             />
           </div>
           <Review />
@@ -255,11 +254,7 @@ export default function Home() {
                 Shape your<br></br>
                 future, join wecode Today!
               </h3>
-              <Link href="/">
-                <a className="font-bold text-[20px] mx-auto md:mx-0 text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] block w-fit duration-150 hover:bg-[#323232] hover:text-white">
-                  Read More
-                </a>
-              </Link>
+              <Button name="Read More" url="/" type='dark'/>
             </div>
             <div className="col-auto block md:hidden">
               {/* <Image

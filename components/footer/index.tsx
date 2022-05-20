@@ -39,7 +39,7 @@ export default function footer() {
             </div>
           </div>
           <div className="md:col-span-3">
-            <h2 className="text-[18px] font-inter font-semibold text-[#ffffff] mb-3">
+            <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Industries we serve
             </h2>
             <div className="flex flex-col gap-2">
@@ -76,7 +76,7 @@ export default function footer() {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h2 className="text-[18px] font-inter font-semibold text-[#ffffff] mb-3">
+            <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Tech Stack
             </h2>
             <div className="flex flex-col gap-2">
@@ -113,7 +113,7 @@ export default function footer() {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h2 className="text-[18px] font-inter font-semibold text-[#ffffff] mb-3">
+            <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Global Presence
             </h2>
             <div className="flex flex-col gap-2">
@@ -135,7 +135,7 @@ export default function footer() {
             </div>
           </div>
           <div className="col-span-2">
-            <h2 className="text-[18px] font-inter text-center md:text-left font-semibold text-[#ffffff] mb-3">
+            <h2 className="text-[18px] capitalize font-inter text-center md:text-left font-semibold text-[#ffffff] mb-3">
               Contact
             </h2>
             <div className="flex md:flex-col gap-x-8 gap-2 justify-center flex-wrap md:gap-2">

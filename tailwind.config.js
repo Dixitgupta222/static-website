@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
+        'quicksand': ['Quicksand', 'sans-serif'],
       },
       boxShadow: {
         'custom': '0px 0px 10px rgba(0, 0, 0, 0.1);',

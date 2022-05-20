@@ -30,7 +30,7 @@ export default function Header(props) {
    setShow(true)
   }
   return (
-    <div className="absolute w-full left-0 top-3  px-4 md:px-0 h-auto bg-white z-50">
+    <div className="absolute w-full left-0 top-[17px] px-4 md:px-0 h-auto bg-white z-50">
       <div className="container mx-auto relative">
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-3">
@@ -44,7 +44,7 @@ export default function Header(props) {
         </div>
         <div className="col-span-9">
           {width > 767 && (
-            <div className="flex flex-row gap-5 h-full items-center justify-end">
+            <div className="flex flex-row gap-10 capitalize h-full items-center justify-end">
               <Link href="/about">
                 <a
                   className={`font-poppins text-[18px] font-medium text-${props.color}`}
