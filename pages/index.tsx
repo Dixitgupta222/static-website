@@ -207,7 +207,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10 mx-auto w-fit">
-            <Button name="View All" url="/" type='light'/>
+            <Button name='View All' url='/' type='light'/>
           </div>
         </div>
       </div>
@@ -254,7 +254,7 @@ export default function Home() {
                 Shape your<br></br>
                 future, join wecode Today!
               </h3>
-              <Button name="Read More" url="/" type='dark'/>
+              <Button name='Read More' url='/' type='dark'/>
             </div>
             <div className="col-auto block md:hidden">
               {/* <Image
