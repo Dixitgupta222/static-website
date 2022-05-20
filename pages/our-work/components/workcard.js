@@ -16,6 +16,6 @@ export default function WorkCard(props) {
          {props.dec}
         </p>
       </div>
-  
-  );
+   
+  ); 
 }
