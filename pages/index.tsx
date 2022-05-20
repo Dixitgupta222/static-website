@@ -4,11 +4,12 @@ import TechSlider from "../components/techSlider";
 import Image from "next/image";
 import Layout from "../components/layout/index";
 // import Experience from "../components/experience";
-import {Button} from "../components/button";
+import Button from "../components/button";
 import Form from "../components/form";
 import BannerSlider from "../components/bannerSlider";
 import Review from "../components/reviewSlider";
 import getTranslations from "../translations/translations";
+
 export default function Home() {
   return (
     <>
