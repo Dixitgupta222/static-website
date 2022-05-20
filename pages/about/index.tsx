@@ -54,7 +54,7 @@ export default function About() {
           </div>
         </div>
       </div>
-			<Experience bg="#323232"/>
+			<Experience bg="#323232"/> 
 			<div className="py-10 lg:py-24">
 				<h2 className="font-poppins font-bold hidden md:block uppercase text-[60px] text-center text-[#323232] mb-10">Awesome team</h2>
 				<div className="container">
