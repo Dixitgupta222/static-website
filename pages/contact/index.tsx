@@ -9,7 +9,7 @@ export default function Contact() {
     <>
       <div className="bg-[url('/images/contactbanner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="container px-4 md:px-0">
-          <div className="flex flex-wrap items-center justify-center h-[300px] md:h-[350px] lg:h-[500px]"></div>
+          <div className="flex flex-wrap items-center justify-center h-[300px] md:h-[350px] lg:h-[650px]"></div>
         </div>
       </div>
       <div className="my-10 lg:my-24 relative overflow-hidden">

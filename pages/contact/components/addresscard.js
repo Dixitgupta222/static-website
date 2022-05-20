@@ -12,7 +12,7 @@ export default function AddressCard(props) {
       <div className="flex flex-col flex-wrap gap-5">
         <div className="flex flex-wrap gap-3 items-center">
           <div className=" w-fit">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
+            <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
               <MdOutlineLocationOn />
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function AddressCard(props) {
         </div>
         <div className="flex flex-wrap gap-3 items-center">
           <div className=" w-fit">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
+            <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
               <MdOutlinePhoneInTalk />
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function AddressCard(props) {
         </div>
         <div className="flex flex-wrap gap-3 items-center">
           <div className=" w-fit">
-            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
+            <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
               <BsEnvelopeOpen />
             </div>
           </div>

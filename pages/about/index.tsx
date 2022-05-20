@@ -20,7 +20,7 @@ export default function About() {
         <div className="container px-4 md:px-0">
           <div className="grid md:grid-cols-2 gap-5">
             <div className="col-auto flex flex-wrap flex-col justify-center">
-            <div className="absolute  w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[-1]  -left-[8%]">
+            <div className="absolute  w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[-1] -left-[8%]">
             <Image
               src="/images/aboutbg.png"
               layout="responsive"
@@ -47,7 +47,7 @@ export default function About() {
               </Link>
             </div>
             <div className="col-auto">
-							<div className="">
+							<div className="absolute right-0 w-[650px] top-[50%] -translate-y-[50%]">
              <Image src="/images/image38.png" layout="responsive" objectFit='contain' width={100} height={100} />
 							</div>
             </div>
