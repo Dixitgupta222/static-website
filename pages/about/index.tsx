@@ -48,7 +48,7 @@ export default function About() {
             </div>
             <div className="col-auto">
 							<div className="">
-             <Image src="/images/image38.png" layout="responsive" objectFit="conatin" width={100} height={100} />
+             <Image src="/images/image38.png" layout="responsive" objectFit='contain' width={100} height={100} />
 							</div>
             </div>
           </div>
