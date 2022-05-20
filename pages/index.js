@@ -273,12 +273,3 @@ export default function Home() {
 }
 // Home.displayName = "Home";
 Home.PageLayout = Layout;
-
-export async function getStaticProps(context: any) {
-  const messages = getTranslations(context.locale);
-  return {
-    props: {
-      messages: messages,
-    },
-  };
-}

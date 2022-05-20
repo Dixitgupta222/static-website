@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-export default function Button(props): JSX.Element {
+export default function Button(props) {
     const Dark = () => (
         <Link href={props.url}>
         <a className={`font-bold font-quicksand text-[20px] leading-normal text-[#323232] border-[1px] border-[#323232] py-[12px] px-[44px]  block w-fit duration-150 hover:bg-[#323232] hover:text-[#ffffff]`}>
