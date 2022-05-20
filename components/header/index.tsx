@@ -3,7 +3,11 @@ import React, { useEffect, useState, useRef } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
 
-export default function Header(props) {
+interface Props {
+  color:string
+}
+
+export default function Header({color}:Props) {
   const [width, setWidth] = useState("0");
   const [show, setShow] = useState(false);
   // console.log('header'+props.color)
@@ -47,21 +51,21 @@ export default function Header(props) {
             <div className="flex flex-row gap-5 h-full items-center justify-end">
               <Link href="/about">
                 <a
-                  className={`font-poppins text-[18px] font-medium text-${props.color}`}
+                  className={`font-poppins text-[18px] font-medium text-${color}`}
                 >
                   About
                 </a>
               </Link>
               <Link href="/our-work">
                 <a
-                  className={`font-poppins text-[18px] font-medium text-${props.color}`}
+                  className={`font-poppins text-[18px] font-medium text-${color}`}
                 >
                   Our Work
                 </a>
               </Link>
               <Link href="/contact">
                 <a
-                  className={`font-poppins text-[18px] font-medium text-${props.color}`}
+                  className={`font-poppins text-[18px] font-medium text-${color}`}
                 >
                   Contact us
                 </a>
