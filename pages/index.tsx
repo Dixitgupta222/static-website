@@ -198,7 +198,7 @@ export default function Home() {
                     <Image
                       src="/images/work5.png"
                       layout='responsive'
-                      objectFit='cover'
+                      objectFit='cover' 
                       width={1000}
                       height={500}
                     />
