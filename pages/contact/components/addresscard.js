@@ -35,7 +35,7 @@ export default function AddressCard(props) {
             <p className="font-poppins font-normal uppercase text-[14px] text-[#323232]">
              {props.phone}
             </p>
-          </div>
+          </div> 
         </div>
         <div className="flex flex-wrap gap-3 items-center">
           <div className=" w-fit">
