@@ -10,11 +10,11 @@ export default function TechSlider() {
   const navigationNextRef = useRef(null)
   return (
     <div className="relative px-14 md:px-10">
-        <di2
+        <div
         className="button-prev w-8 h-8 md:w-auto md:h-auto md:block absolute top-2/4 left-2 md:-left-4 transform -translate-y-[50%] hover:cursor-pointer"
       >
         <Image src="/images/leftarrowwhite.png" width="50" height="50" />
-      </di2>
+      </div>
       <div
         className="button-next w-8 h-8 md:w-auto md:h-auto  md:block absolute top-2/4 right-2 md:-right-4 transform -translate-y-[50%] hover:cursor-pointer"
       >

@@ -9,16 +9,16 @@ export default function About() {
     <>
       <div className="bg-[url('/images/mobile-aboutbanner.png')] md:bg-[url('/images/aboutbanner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="container px-4 md:px-0">
-          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[400px]">
+          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[500px]">
             <h2 className="font-poppins font-bold uppercase text-[20px] md:text-[50px] text-white">
               About US
             </h2>
           </div>
         </div>
       </div>
-      <div className=" md:py-36 py-24 relative overflow-hidden">
+      <div className="md:py-36 py-10 md:my-12 relative overflow-hidden">
         <div className="container px-4 md:px-0">
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid lg:grid-cols-2 gap-5">
             <div className="col-auto flex flex-wrap flex-col justify-center">
             <div className="absolute  w-[250px] h-[225px] md:w-[660px] md:h-[600px] z-[-1] -left-[8%]">
             <Image
@@ -47,20 +47,20 @@ export default function About() {
               </Link>
             </div>
             <div className="col-auto">
-							<div className="absolute right-0 w-[650px] top-[50%] -translate-y-[50%]">
+							<div className="lg:absolute right-0 w-full lg:w-[650px] top-[50%] md:translate-y-32 lg:-translate-y-[50%]">
              <Image src="/images/image38.png" layout="responsive" objectFit='contain' width={100} height={100} />
 							</div>
             </div>
           </div>
         </div>
       </div>
-			<Experience bg="#323232"/> 
+			<Experience bg='#323232'/> 
 			<div className="py-10 lg:py-24">
 				<h2 className="font-poppins font-bold hidden md:block uppercase text-[60px] text-center text-[#323232] mb-10">Awesome team</h2>
 				<div className="container">
 				<Team/>
 				<Link href="/about">
-                <a className="font-bold text-[20px] mx-auto text-[#323232] border-[1px] border-[#323232] py-[12px] px-[40px] mt-10 block w-fit duration-150 hover:bg-[#323232] hover:text-[white]">
+                <a className=" md:block hidden font-bold text-[20px] mx-auto text-[#323232] border-[1px] border-[#323232] py-[12px] px-[40px] mt-10  w-fit duration-150 hover:bg-[#323232] hover:text-[white]">
                   View All
                 </a>
               </Link>

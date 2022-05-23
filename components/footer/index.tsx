@@ -1,18 +1,24 @@
 import React from "react";
 import Link from "next/dist/client/link";
-import { BsEnvelopeFill,BsFillTelephoneFill } from "react-icons/bs";
-import { FaFacebookF,FaYoutube,FaWhatsapp,FaInstagram } from "react-icons/fa";
+import { BsEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 export default function footer() {
   return (
     <div className="bg-[#323232] md:pt-24 pt-10 pb-5  px-4 md:px-0">
       <div className="container mx-auto relative">
-        <div className="grid md:grid-cols-12 gap-4">
-          <div className="col-span-2 md:col-span-3">
+        <div className="grid md:grid-cols-12 gap-4 md:gap-y-4 gap-y-10">
+          <div className="col-span-2 md:col-span-3 relative">
+          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
             <Link href="/">
               <a>
-              <h2 className="text-[40px] font-inter font-bold text-[#ffffff] leading-10 mb-4">
-              WeCode
-            </h2>
+                <h2 className="text-[40px] font-inter font-bold text-[#ffffff] leading-10 mb-4">
+                  WeCode
+                </h2>
               </a>
             </Link>
             <p className="font-poppins font-light text-[10px] my-4 text-[#ffffff] leading-4 mr-10">
@@ -25,19 +31,28 @@ export default function footer() {
             </p>
             <div className="flex md:hidden items-center gap-5 py-3">
               <Link href="/">
-                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]"><FaFacebookF/></a>
+                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaFacebookF />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]"><FaYoutube/></a>
+                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaYoutube />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]"><FaWhatsapp/></a>
+                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaWhatsapp />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]"><FaInstagram/></a>
+                <a className="font-poppins font-normal text-[20px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaInstagram />
+                </a>
               </Link>
             </div>
           </div>
+         
           <div className="md:col-span-3">
             <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Industries we serve
@@ -112,7 +127,9 @@ export default function footer() {
               </Link>
             </div>
           </div>
-          <div className="md:col-span-2">
+          <div className="col-span-2 relative">
+          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -top-5 left-0"></div>
+          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
             <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Global Presence
             </h2>
@@ -141,7 +158,7 @@ export default function footer() {
             <div className="flex md:flex-col gap-x-8 gap-2 justify-center flex-wrap md:gap-2">
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black] flex gap-2 items-center">
-                  <BsEnvelopeFill /> WeCode@.com
+                  <BsEnvelopeFill /> WeCode@gmail.com
                 </a>
               </Link>
               <Link href="/">
@@ -154,7 +171,6 @@ export default function footer() {
                   <BsFillTelephoneFill /> +917373737373
                 </a>
               </Link>
-             
             </div>
           </div>
         </div>
@@ -162,22 +178,30 @@ export default function footer() {
           <div className="col-span-8">
             <div className="hidden md:flex items-center gap-5">
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]"><FaFacebookF/></a>
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaFacebookF />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]"><FaYoutube/></a>
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaYoutube />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]"><FaWhatsapp/></a>
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaWhatsapp />
+                </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]"><FaInstagram/></a>
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                  <FaInstagram />
+                </a>
               </Link>
             </div>
           </div>
           <div className="col-span-4">
             <p className="font-poppins font-normal text-[12px] text-right text-[#ffffff] opacity-90 opacity-80">
-            Copyright © 2021 Wecode. All Rights Reserved.
+              Copyright © 2021 Wecode. All Rights Reserved.
             </p>
           </div>
         </div>

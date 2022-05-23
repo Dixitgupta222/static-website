@@ -27,7 +27,7 @@ export default function Review() {
   return (
     <div className="grid lg:grid-cols-12 gap-20 lg:gap-5 ">
       
-      <div className="lg:col-span-7 flex  flex-col justify-center">
+      <div className="lg:col-span-7 flex  flex-col justify-center lg:pl-10 reviewSlider">
       
         <h3 className="font-poppins text-center uppercase lg:text-left font-bold text-[22px0] md:text-[30px] text-[#323232] z-10">
           What our clients say about us !
@@ -38,10 +38,10 @@ export default function Review() {
           centeredSlides={true}
           spaceBetween={10}
           slidesPerView={1}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           // loop={true}
           className="review-swiper w-[300px] md:w-[650px]  lg:w-full"
           pagination={{
@@ -106,10 +106,10 @@ export default function Review() {
           {/* <span className=" rounded-full border-[1px] border-[#C4C4C4] p-1"></span> */}
         </div>
       </div>
-      <div className="lg:col-span-5 hidden md:block">
+      <div className="lg:col-span-5 hidden lg:block relative">
    
-        <div className="md:w-96 md:h-96 w-80 h-80  md:relative md:mx-auto duration-150 group transform hover:-translate-y-2 lg:m-0">
-          <div className="bg-[#3a3a3a] w-full h-full p-8 md:relative flex flex-row gap-0 flex-wrap content-start">
+        <div className="md:w-96 md:h-96 w-80 h-80 md:mx-auto duration-150 group ease-in-out">
+          <div className="bg-[#3a3a3a] w-full h-full p-8 flex flex-row gap-0 duration-150 flex-wrap content-start hover:-translate-y-2 relative z-[1]">
             <div className="w-10 h-10 mb-8"><Image src="/images/Q.png" layout="responsive" width="45" height="25"></Image></div>
             <div className="">
               <p className="font-poppins font-normal text-[15px] leading-5 text-white mb-4">
@@ -120,7 +120,7 @@ export default function Review() {
               </p>
             </div>
           </div>
-          <div className="md:w-96 md:h-96 w-80 h-80 bg-[#d2d2d247] duration-150 group-hover:top-[50px] p-8 absolute -z-20 top-[35px] -right-[35px]"></div>
+          <div className="md:w-96 md:h-96 w-80 h-80 bg-[#d2d2d247] duration-150 group-hover:top-[4.5rem] p-8 z-0 transform absolute top-16 -right-[0]"></div>
         </div>
       </div>
     </div>

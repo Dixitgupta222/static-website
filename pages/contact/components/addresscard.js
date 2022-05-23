@@ -1,19 +1,26 @@
 import React from "react";
 import { MdOutlinePhoneInTalk, MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelopeOpen } from "react-icons/bs";
+import Image from "next/image";
 
 export default function AddressCard(props) {
   return (
     <div className="col-auto relative  group">
-      <div className="devider group-last:hidden hidden lg:block  absolute w-[1px] h-full bg-[#000000] opacity-20 top-2/4 transform -translate-y-2/4 right-5"></div>
+      <div className="devider group-last:hidden absolute lg:w-[1px] lg:h-full h-[1px] w-full bg-[#000000] opacity-20 lg:top-2/4 transform lg:-translate-y-2/4 lg:right-5 -bottom-10"></div>
       <h2 className="font-inter font-bold mb-5 uppercase text-[25px] md:text-[25px] lg:text-[25px] text-[#000000]">
         {props.country}
       </h2>
       <div className="flex flex-col flex-wrap gap-5">
         <div className="flex flex-wrap gap-3 items-center">
-          <div className=" w-fit">
+          <div className=" w-fit mb-auto">
             <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
-              <MdOutlineLocationOn />
+              {/* <MdOutlineLocationOn /> */}
+              <Image
+                src="/images/locationicon.png"
+                width={22}
+                height={22}
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className=" w-4/6">
@@ -23,9 +30,15 @@ export default function AddressCard(props) {
           </div>
         </div>
         <div className="flex flex-wrap gap-3 items-center">
-          <div className=" w-fit">
+          <div className=" w-fit mb-auto">
             <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
-              <MdOutlinePhoneInTalk />
+              {/* <MdOutlinePhoneInTalk /> */}
+              <Image
+                src="/images/phoneicon.png"
+                width={22}
+                height={22}
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className=" w-4/6">
@@ -33,14 +46,20 @@ export default function AddressCard(props) {
               Phone
             </h2>
             <p className="font-poppins font-normal uppercase text-[14px] text-[#323232]">
-             {props.phone}
+              {props.phone}
             </p>
-          </div> 
+          </div>
         </div>
         <div className="flex flex-wrap gap-3 items-center">
-          <div className=" w-fit">
+          <div className=" w-fit mb-auto">
             <div className=" w-14 h-14 flex items-center justify-center rounded-full bg-[#DEDEDE] text-[18px] text-[#323232]">
-              <BsEnvelopeOpen />
+              {/* <BsEnvelopeOpen /> */}
+              <Image
+                src="/images/mailicon.png"
+                width={22}
+                height={20}
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className=" w-4/6">

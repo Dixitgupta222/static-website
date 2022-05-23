@@ -17,7 +17,7 @@ export default function Contact() {
           <h2 className="font-poppins font-bold uppercase text-[#323232] text-[25px] text-center md:text-[40px] ">
             Address
           </h2>
-          <div className="grid lg:grid-cols-3 gap-5 gap-y-20 my-10 p-5 md:p-12 shadow-xl bg-white">
+          <div className="grid lg:grid-cols-3 gap-5 gap-y-20 my-10 p-5 md:p-12 shadow-xl bg-white lg:mx-10">
             <AddressCard
               country="USA"
               address="Address :  Shubham Corporate Above Indusind Bank, Sapna Sangeeta Rd, near Aakash Namkeen, Indore, Madhya Pradesh "
