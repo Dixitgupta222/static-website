@@ -18,7 +18,7 @@ export default function Experience(props) {
                   <div className="bg-[#323232] opacity-50 h-[7px] absolute bottom-6 left-1/2 transform -translate-x-2/4 w-4/5 rounded"></div>
                 </div>
               </div>
-              <div className="col-auto translate-y-5">
+              <div className="col-auto translate-y-5"> 
                 <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     3+
