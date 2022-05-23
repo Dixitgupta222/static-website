@@ -2,13 +2,13 @@ import React from "react";
 import Link from "next/link";
 export default function Experience(props) {
   return (
-    <div className={`py-10 lg:py-24 px-4 md:px-0 lg:bg-[${props.bg}]`}>
+    <div className={`py-10 lg:py-24 px-4 md:px-0 lg:bg-[#323232]`}>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <div className="col-auto md:col-span-5 mb-5 lg:my-0">
-            <div className="grid grid-cols-2 gap-5 md:gap-10">
+            <div className="grid grid-cols-2 gap-5 md:gap-10  lg:gap-y-3 xl:gap-5">
               <div className="col-auto">
-                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-60 lg:h-56 relative">
+                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     270+
                   </h2>
@@ -19,7 +19,7 @@ export default function Experience(props) {
                 </div>
               </div>
               <div className="col-auto translate-y-5">
-                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-60 lg:h-56 relative">
+                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     3+
                   </h2>
@@ -30,7 +30,7 @@ export default function Experience(props) {
                 </div> 
               </div>
               <div className="col-auto">
-                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-60 lg:h-56 relative">
+                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     100+
                   </h2>
@@ -41,7 +41,7 @@ export default function Experience(props) {
                 </div>
               </div>
               <div className="col-auto translate-y-5">
-                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-60 lg:h-56 relative">
+                <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     30+
                   </h2>
