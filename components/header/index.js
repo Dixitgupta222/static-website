@@ -37,10 +37,10 @@ export default function Header(props) {
           <Link href="/">
             <a>
               <h2 className={`text-[50px] font-inter font-bold transition-all ease-in-out duration-200 text-[#323232] z-30`}>
-                WeCode
+              Wekrypt
               </h2>
             </a>
-          </Link>
+          </Link>b
         </div>
         <div className="col-span-9">
           {width > 767 && (

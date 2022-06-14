@@ -268,7 +268,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               <h3 className="font-poppins text-center md:text-left text-[22px] md:text-[30px] uppercase font-semibold text-[#323232] my-8">
               We&apos;ll be delighted to assist you in discovering and pursuing your passions.
               </h3>
-              <Button name='Read More' url='/contact' type='dark'/>
+              <Button name='Apply Now' url='/contact' type='dark'/>
             </div>
             <div className="col-auto block md:hidden">
               {/* <Image

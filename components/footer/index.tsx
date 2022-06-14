@@ -13,7 +13,7 @@ export default function footer() {
       <div className="container mx-auto relative">
         <div className="grid md:grid-cols-12 gap-4 md:gap-y-4 gap-y-10">
           <div className="col-span-2 md:col-span-3 relative">
-          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
+            <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
             <Link href="/">
               <a>
                 <h2 className="text-[40px] font-inter font-bold text-[#ffffff] leading-10 mb-4">
@@ -22,12 +22,9 @@ export default function footer() {
               </a>
             </Link>
             <p className="font-poppins font-light text-[10px] my-4 text-[#ffffff] leading-4 mr-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
-              amet pellentesque orci. Phasellus quis massa scelerisque, pulvinar
-              justo mollis, fringilla urna. Suspendisse elementum turpis quis
-              facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Morbi sit amet pellentesque orci. PhaLorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Morbi sit amet pellentesque
+              We Krypt is partnering with companies to transform and manage
+              their business by harnessing the power of technology. A software
+              development company with a full cycle of services.
             </p>
             <div className="flex md:hidden items-center gap-5 py-3">
               <Link href="/">
@@ -52,7 +49,7 @@ export default function footer() {
               </Link>
             </div>
           </div>
-         
+
           <div className="md:col-span-3">
             <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Industries we serve
@@ -128,8 +125,8 @@ export default function footer() {
             </div>
           </div>
           <div className="col-span-2 relative">
-          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -top-5 left-0"></div>
-          <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
+            <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -top-5 left-0"></div>
+            <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
             <h2 className="text-[18px] capitalize font-inter font-semibold text-[#ffffff] mb-3">
               Global Presence
             </h2>
@@ -163,12 +160,12 @@ export default function footer() {
               </Link>
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
-                  <BsFillTelephoneFill /> +917373737373
+                  <BsFillTelephoneFill /> 07314910077
                 </a>
               </Link>
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
-                  <BsFillTelephoneFill /> +917373737373
+                  <BsFillTelephoneFill /> 9424980001
                 </a>
               </Link>
             </div>

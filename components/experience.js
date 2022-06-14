@@ -67,11 +67,11 @@ export default function Experience(props) {
               needs with the most advantageous mix of delivery options, ensuring
               the right delivery to meet your business goals
             </p>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <a className="font-bold text-[20px] mx-auto lg:mx-0 text-[#323232] lg:text-[#ffffff]  border-[1px] lg:border-[#ffffff] border-[#323232] py-[12px] px-[26px] md:pr-[50px] mt-10 block w-fit duration-150 lg:hover:bg-[#ffffff] hover:bg-[#323232] lg:hover:text-[#323232] hover:text-[#ffffff]">
                 Read More
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

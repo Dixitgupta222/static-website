@@ -35,11 +35,28 @@ export default function About() {
                 Who We Are...?
               </h2>
               <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
-                We are skilled technologists that apply our passion for
-                technology to create successful products and solutions for our
-                clients. Our passion drives us to be innovative, creative, and
-                experts. Our love of technology keeps us learning, motivated,
-                and excited about what we do.
+                WeKrypt capitalizes on the strength of our numerous combined
+                synergies and core capabilities including: deep domain and
+                delivery expertise, focus on micro-verticals, suites of IP-led
+                solutions, methodologies and frameworks, technology alliances
+                and service partnerships secure & scalable delivery
+                infrastructure across geographies.
+            </p>
+            <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
+                Our customer footprint spans
+                across verticals like banking & financial services, insurance &
+                healthcare, life sciences, manufacturing, retail, distribution &
+                logistics; media, entertainment, leisure & travel,
+                communication, energy & utilities, federal government, and
+                independent software vendors
+                </p>
+              <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
+                Our comprehensive portfolio of
+                services includes application development and management,
+                verification & validation, enterprise application solutions,
+                infrastructure management, customer interaction services &
+                business process outsourcing, product & engineering solutions,
+                and business & technology consulting.
               </p>
               {/* <Link href="/about">
                 <a className="font-bold text-[20px] mx-auto md:mx-0 text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-4 md:my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-[white]">
