@@ -155,7 +155,7 @@ export default function footer() {
             <div className="flex md:flex-col gap-x-8 gap-2 justify-center flex-wrap md:gap-2">
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
-                  <BsEnvelopeFill /> WeCode@gmail.com
+                  <BsEnvelopeFill /> Wekrypt@gmail.com
                 </a>
               </Link>
               <Link href="/">

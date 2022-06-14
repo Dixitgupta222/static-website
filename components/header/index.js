@@ -40,7 +40,7 @@ export default function Header(props) {
               Wekrypt
               </h2>
             </a>
-          </Link>b
+          </Link>
         </div>
         <div className="col-span-9">
           {width > 767 && (
