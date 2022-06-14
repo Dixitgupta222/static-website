@@ -18,7 +18,7 @@ export default function Experience(props) {
                   <div className="bg-[#323232] opacity-50 h-[7px] absolute bottom-6 left-1/2 transform -translate-x-2/4 w-4/5 rounded"></div>
                 </div>
               </div>
-              <div className="col-auto translate-y-5"> 
+              <div className="col-auto translate-y-5">
                 <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
                   <h2 className="font-poppins font-medium text-[35px] md:text-[50px] text-[#323232] text-center">
                     3+
@@ -27,7 +27,7 @@ export default function Experience(props) {
                     Global Presence
                   </p>
                   <div className="bg-[#323232] opacity-50 h-[7px] absolute bottom-6 left-1/2 transform -translate-x-2/4 w-4/5 rounded"></div>
-                </div> 
+                </div>
               </div>
               <div className="col-auto">
                 <div className="bg-white rounded shadow-custom transform duration-150 hover:scale-105 px-10 py-8 mx-auto lg:m-0 min-h-[160px] md:w-72 md:h-64 lg:w-52 lg:h-52 xl:w-60 xl:h-56 relative">
@@ -58,9 +58,14 @@ export default function Experience(props) {
               Immersive Experience
             </h3>
             <p className="font-poppins text-[15px] text-center lg:text-left md:text-[18px] leading-7 text-[#323232] lg:text-[#ffffff] ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry.
+              With WeKrypt experts in your local market and around the world,
+              our approach ensures the right delivery for your business. Your
+              business is unique and at WeKrypt , we have the proven experience
+              and global power to create a delivery plan that is tailored
+              specifically for your needs. With experts locally and globally,
+              WeKrypt works closely with you to match your individual business
+              needs with the most advantageous mix of delivery options, ensuring
+              the right delivery to meet your business goals
             </p>
             <Link href="/contact">
               <a className="font-bold text-[20px] mx-auto lg:mx-0 text-[#323232] lg:text-[#ffffff]  border-[1px] lg:border-[#ffffff] border-[#323232] py-[12px] px-[26px] md:pr-[50px] mt-10 block w-fit duration-150 lg:hover:bg-[#ffffff] hover:bg-[#323232] lg:hover:text-[#323232] hover:text-[#ffffff]">
@@ -73,4 +78,3 @@ export default function Experience(props) {
     </div>
   );
 }
-  

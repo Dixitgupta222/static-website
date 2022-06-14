@@ -83,9 +83,9 @@ export default function Home() {
                 Who We Are...?
               </h3>
               <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-center md:text-left md:block ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
+              We Krypt is partnering with companies to transform and manage their business by harnessing the power of technology. A software development company with a full cycle of services. 
+We mobilize expert teams that create custom solutions from existing and emerging technology to deliver viable outcomes at speed.
+For over 5 years, we have been helping enterprises around the world to transform business by creating effective digital solutions with the use of innovative technologies.
               </p>
               <Link href="/about">
                 <a className="md:block mx-auto md:mx-0 font-bold text-[20px] text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-white">
@@ -129,12 +129,10 @@ export default function Home() {
                   />
                 </div>
               <h3 className="font-poppins  md:text-left text-[22px] uppercase md:text-[30px] mb-5 font-bold text-[#323232] md:text-[white]">
-                Grow your business with digital technologies
+              Proven process, real results
               </h3>
               <p className="font-poppins text-[18px] leading-7 md:text-left text-[#323232] md:text-[white] lg:w-[895px]">
-                Whether you are a startup or a Fortune 500, let us help you take
-                a fresh look at your digital transformation readiness for a
-                successful operating model in the digital era.
+              Our success starts with sourcing best-in-class developers and ends with exceeding our clients' every expectation.
               </p>
               <Link href="/contact">
                 <a className="font-bold text-[20px] md:text-[#ffffff] text-[#323232] border-[1px] md:mx-0 md:border-[#ffffff] border-[#323232] py-[12px] px-[26px] mt-10 block w-fit duration-150 md:hover:bg-[#ffffff] hover:bg-[#323232] md:hover:text-[#323232] hover:text-[#ffffff]">
@@ -159,13 +157,20 @@ export default function Home() {
                     objectFit='contain'
                   />
                 </div>
-              <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
-                Tech Stack
+              <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[55px] mb-5 md:mb-0 font-semibold text-[#323232]">
+              Services
               </h3>
               <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-center md:text-left hidden md:block ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
+              • Analytics & Data Services <br/>
+              • Artificial Intelligence  <br/>
+              • Automation<br/>
+              • Cloud Services  <br/>
+              • Enterprise DevOps <br/>
+              • DevSecOps& Cybersecurity <br/>
+              • Quality Engineering and Testing<br/>
+              • Digital Experiences & Innovation  <br/>
+              • WeKrypt Microsoft Services
+
               </p>
               <Link href="/about">
                 <a className=" hidden md:block mx-auto md:mx-0 font-bold text-[20px] text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-white">
@@ -245,7 +250,7 @@ export default function Home() {
             </div>
             <div className="col-span-6">
               <h3 className="font-poppins uppercase text-[22px] text-center md:text-left md:text-[40px] pb-10 font-bold text-[#ffffff]">
-                Contact Us
+              Ready to start, something great?
               </h3>
               <Form bordercolor="#ffffff" label="#ffffff" button="#ffffff" buttonhover="#323232"/>
             </div>
@@ -258,11 +263,10 @@ export default function Home() {
           <div className="grid md:grid-cols-12 gap-5">
             <div className="md:col-span-4">
               <span className="bg-[#323232] font-poppins flex w-fit mx-auto md:mx-0 font-bold text-[12px] md:text-[20px] text-white py-2 px-4 md:px-[25px] md:py-[10px]">
-                CAREERS
+              Join Us !
               </span>
               <h3 className="font-poppins text-center md:text-left text-[22px] md:text-[30px] uppercase font-semibold text-[#323232] my-8">
-                Shape your<br></br>
-                future, join wecode Today!
+              We'll be delighted to assist you in discovering and pursuing your passions.
               </h3>
               <Button name='Read More' url='/' type='dark'/>
             </div>

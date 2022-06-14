@@ -2,7 +2,7 @@ import '../styles/globals.css'
 // import Layout from '../layout/layout'
 function MyApp({ Component, pageProps }) {
 	// console.log(Component)
-	// color = will be tailwind class color or for custom wrtite like [#969600] this
+	// color = will be tailwind class color or for custom write like [#969600] this
  	const Layout = Component.PageLayout;
 	if (Layout)
 			if (Component.displayName === "Home"){

@@ -6,9 +6,13 @@ import Image from "next/image";
 export default function AddressCard(props) {
   return (
     <div className="col-auto relative  group">
-      <div className="devider group-last:hidden absolute lg:w-[1px] lg:h-full h-[1px] w-full bg-[#000000] opacity-20 lg:top-2/4 transform lg:-translate-y-2/4 lg:right-5 -bottom-10"></div>
+      {/* <div
+        className="devider group-last:hidden absolute 
+      lg:w-[1px] lg:h-full h-[1px] w-full bg-[#000000] 
+      opacity-20 lg:top-2/4 transform lg:-translate-y-2/4 lg:right-5 -bottom-10"
+      ></div> */}
       <h2 className="font-inter font-bold mb-5 uppercase text-[25px] md:text-[25px] lg:text-[25px] text-[#000000]">
-        {props.country}
+        {/* {props.country} */}
       </h2>
       <div className="flex flex-col flex-wrap gap-5">
         <div className="flex flex-wrap gap-3 items-center">
@@ -24,6 +28,9 @@ export default function AddressCard(props) {
             </div>
           </div>
           <div className=" w-4/6">
+            <h2 className="font-poppins font-medium uppercase text-[18px] mb-3 text-[#323232]">
+              Address
+            </h2>
             <p className="font-poppins font-normal uppercase text-[12px] md:text-[12px] lg:text-[12px] text-[#323232]">
               {props.address}
             </p>

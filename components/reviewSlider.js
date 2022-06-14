@@ -38,11 +38,11 @@ export default function Review() {
           centeredSlides={true}
           spaceBetween={10}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
-          // loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
           className="review-swiper w-[300px] md:w-[650px]  lg:w-full"
           pagination={{
             el: ".custom-pagination",

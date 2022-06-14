@@ -12,7 +12,7 @@ export default function Contact() {
           <div className="flex flex-wrap items-center justify-center h-[300px] md:h-[350px] lg:h-[650px]"></div>
         </div>
       </div>
-      <div className="my-10 lg:my-24 relative overflow-hidden">
+      {/* <div className="my-10 lg:my-24 relative overflow-hidden">
         <div className="container px-4 md:px-0">
           <h2 className="font-poppins font-bold uppercase text-[#323232] text-[25px] text-center md:text-[40px] ">
             Address
@@ -38,13 +38,21 @@ export default function Contact() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="pb-10 lg:pb-24">
         <h2 className="font-poppins font-bold uppercase my-6 tex-[22px] md:text-[40px] text-center text-[#323232]">
          Contact Us
         </h2>
         <div className="container px-10 md:px-20">
+        <div className="grid lg:grid-cols-2 gap-5">
+        <AddressCard
+              country="India"
+              address="G-12 Veda Business Park Bhanwarkua Square Indore Madhya Pradesh 452001"
+              phone="07314910077, 9424980001"
+              email="WeCode@gmail.com"
+            />
          <Form bordercolor="#323232" label="#323232" align="center" button="#323232" buttonhover="white"/>
+        </div>
         </div>
       </div>
     </>
