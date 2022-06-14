@@ -132,7 +132,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               Proven process, real results
               </h3>
               <p className="font-poppins text-[18px] leading-7 md:text-left text-[#323232] md:text-[white] lg:w-[895px]">
-              Our success starts with sourcing best-in-class developers and ends with exceeding our clients' every expectation.
+              Our success starts with sourcing best-in-class developers and ends with exceeding our clients&apos;s every expectation.
               </p>
               <Link href="/contact">
                 <a className="font-bold text-[20px] md:text-[#ffffff] text-[#323232] border-[1px] md:mx-0 md:border-[#ffffff] border-[#323232] py-[12px] px-[26px] mt-10 block w-fit duration-150 md:hover:bg-[#ffffff] hover:bg-[#323232] md:hover:text-[#323232] hover:text-[#ffffff]">
@@ -266,7 +266,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               Join Us !
               </span>
               <h3 className="font-poppins text-center md:text-left text-[22px] md:text-[30px] uppercase font-semibold text-[#323232] my-8">
-              We'll be delighted to assist you in discovering and pursuing your passions.
+              We&apos;ll be delighted to assist you in discovering and pursuing your passions.
               </h3>
               <Button name='Read More' url='/' type='dark'/>
             </div>
