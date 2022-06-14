@@ -4,11 +4,11 @@ import MemberCard from "./memberCard";
 export default function Team() {
   const teamData = [
    { 'name':'Chetan Meena','designation':'Co-Founder','image':'chetanmeena.png'},
-   { 'name':'Sanjeev Kumar','designation':'Co-Founder','image':''},
+   { 'name':'Sanjeev Kumar','designation':'Co-Founder','image':'avatar.png'},
    { 'name':'Atin Kumar',	'designation':'CTO','image':'atinkumar.jpg'},
    { 'name':'Manish Mehra','designation':'','image':'manishmehra.jpg'},
-   { 'name':'Chetan Prajapat','designation':'','image':''},
-   { 'name':'Deepak Jadhav','designation':'','image':''},
+   { 'name':'Chetan Prajapat','designation':'','image':'avatar.png'},
+   { 'name':'Deepak Jadhav','designation':'','image':'avatar.png'},
 
   ];
   return (
