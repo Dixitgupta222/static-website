@@ -14,7 +14,7 @@ export default function Team() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 my-5 items-center">
       {teamData.map((item, i) => (
-        <MemberCard
+        <MemberCard 
           key={i}
           img={`/images/${item.image}`}
           name={item.name}
