@@ -17,7 +17,7 @@ export default function footer() {
             <Link href="/">
               <a>
                 <h2 className="text-[40px] font-inter font-bold text-[#ffffff] leading-10 mb-4">
-                  WeCode
+                  Wekrypt
                 </h2>
               </a>
             </Link>
@@ -59,32 +59,32 @@ export default function footer() {
             </h2>
             <div className="flex flex-col gap-2">
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Web Development
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   E-Commerce
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   FinTech
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   EdTech
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Health Tech
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Digital Marketing
                 </a>
               </Link>
@@ -96,32 +96,32 @@ export default function footer() {
             </h2>
             <div className="flex flex-col gap-2">
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   PHP
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Python
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Swift
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Android
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   NextJS
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   React
                 </a>
               </Link>
@@ -135,17 +135,17 @@ export default function footer() {
             </h2>
             <div className="flex flex-col gap-2">
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   India
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   USA
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   Nidarlend
                 </a>
               </Link>
@@ -157,17 +157,17 @@ export default function footer() {
             </h2>
             <div className="flex md:flex-col gap-x-8 gap-2 justify-center flex-wrap md:gap-2">
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black] flex gap-2 items-center">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
                   <BsEnvelopeFill /> WeCode@gmail.com
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black] flex gap-2 items-center">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
                   <BsFillTelephoneFill /> +917373737373
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[black] flex gap-2 items-center">
+                <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
                   <BsFillTelephoneFill /> +917373737373
                 </a>
               </Link>
@@ -178,22 +178,22 @@ export default function footer() {
           <div className="col-span-8">
             <div className="hidden md:flex items-center gap-5">
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   <FaFacebookF />
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   <FaYoutube />
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   <FaWhatsapp />
                 </a>
               </Link>
               <Link href="/">
-                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[black]">
+                <a className="font-poppins font-normal text-[16px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
                   <FaInstagram />
                 </a>
               </Link>
@@ -201,7 +201,7 @@ export default function footer() {
           </div>
           <div className="col-span-4">
             <p className="font-poppins font-normal text-[12px] text-right text-[#ffffff] opacity-90 opacity-80">
-              Copyright © 2021 Wecode. All Rights Reserved.
+              Copyright © 2021 Wekrypt. All Rights Reserved.
             </p>
           </div>
         </div>

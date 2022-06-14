@@ -41,11 +41,11 @@ export default function About() {
                 experts. Our love of technology keeps us learning, motivated,
                 and excited about what we do.
               </p>
-              <Link href="/about">
+              {/* <Link href="/about">
                 <a className="font-bold text-[20px] mx-auto md:mx-0 text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-4 md:my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-[white]">
                   Read More
                 </a>
-              </Link>
+              </Link> */}
             </div>
             <div className="col-auto">
               <div className="lg:absolute right-0 w-full lg:w-[650px] top-[50%] md:translate-y-32 lg:-translate-y-[50%]">

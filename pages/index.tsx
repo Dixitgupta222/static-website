@@ -87,11 +87,11 @@ export default function Home() {
 We mobilize expert teams that create custom solutions from existing and emerging technology to deliver viable outcomes at speed.
 For over 5 years, we have been helping enterprises around the world to transform business by creating effective digital solutions with the use of innovative technologies.
               </p>
-              <Link href="/about">
+              {/* <Link href="/about">
                 <a className="md:block mx-auto md:mx-0 font-bold text-[20px] text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-white">
                   Read More
                 </a>
-              </Link>
+              </Link> */}
             </div>
             <div className="col-span-7">
               <div className="relative hidden md:block">
@@ -158,7 +158,7 @@ For over 5 years, we have been helping enterprises around the world to transform
                   />
                 </div>
               <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[55px] mb-5 md:mb-0 font-semibold text-[#323232]">
-              Services
+             Our Services
               </h3>
               <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-center md:text-left hidden md:block ">
               • Analytics & Data Services <br/>
@@ -172,11 +172,11 @@ For over 5 years, we have been helping enterprises around the world to transform
               • WeKrypt Microsoft Services
 
               </p>
-              <Link href="/about">
+              {/* <Link href="/about">
                 <a className=" hidden md:block mx-auto md:mx-0 font-bold text-[20px] text-[#323232] border-[1px] border-[#323232] py-[12px] px-[26px] my-10 block w-fit duration-150 hover:bg-[#323232] hover:text-white">
                   Read More
                 </a>
-              </Link>
+              </Link> */}
             </div>
             <div className="col-span-7">
               <div className="relative hidden md:block">
@@ -261,14 +261,14 @@ For over 5 years, we have been helping enterprises around the world to transform
       <div className="md:bg-[url('/images/careersbg.png')] px-4 md:px-0 bg-[#f3f3f3] bg-no-repeat bg-cover bg-right-top py-10 lg:py-52">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-12 gap-5">
-            <div className="md:col-span-4">
+            <div className="md:col-span-6">
               <span className="bg-[#323232] font-poppins flex w-fit mx-auto md:mx-0 font-bold text-[12px] md:text-[20px] text-white py-2 px-4 md:px-[25px] md:py-[10px]">
               Join Us !
               </span>
               <h3 className="font-poppins text-center md:text-left text-[22px] md:text-[30px] uppercase font-semibold text-[#323232] my-8">
               We&apos;ll be delighted to assist you in discovering and pursuing your passions.
               </h3>
-              <Button name='Read More' url='/' type='dark'/>
+              <Button name='Read More' url='/contact' type='dark'/>
             </div>
             <div className="col-auto block md:hidden">
               {/* <Image

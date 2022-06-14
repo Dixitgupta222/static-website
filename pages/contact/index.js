@@ -49,7 +49,7 @@ export default function Contact() {
               country="India"
               address="G-12 Veda Business Park Bhanwarkua Square Indore Madhya Pradesh 452001"
               phone="07314910077, 9424980001"
-              email="WeCode@gmail.com"
+              email="Wekrypt@gmail.com"
             />
          <Form bordercolor="#323232" label="#323232" align="center" button="#323232" buttonhover="white"/>
         </div>
