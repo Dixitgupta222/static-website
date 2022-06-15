@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Banner section */}
-      <BannerSlider />
+      <BannerSlider/>
       {/* Experience section */}
       <div className="py-10 lg:py-0 px-4 md:px-0 relative">
         <div className="container mx-auto lg:absolute lg:z-10 lg:left-1/2 lg:bottom-1/2 lg:-translate-x-1/2 lg:translate-y-1/2">
@@ -238,7 +238,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               objectFit='contain'
             />
           </div>
-          <Review />
+          <Review/>
         </div>
       </div>
       {/* Contact section */}

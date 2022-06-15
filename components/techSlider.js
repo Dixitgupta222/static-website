@@ -35,20 +35,20 @@ export default function TechSlider() {
             prevEl: '.button-prev'
           }}
           // centeredSlides={true}
-          breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
+        //   breakpoints={{
+        //   640: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20,
+        //   },
+        //   768: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40,
+        //   },
+        //   1024: {
+        //     slidesPerView: 5,
+        //     spaceBetween: 50,
+        //   },
+        // }}
       >
         <SwiperSlide>
           <div className="rounded-xl w-28 h-28 md:w-40 md:h-40 shadow-custom bg-white p-6 mx-auto my-4 flex items-center justify-center transform duration-150 hover:shadow-xl hover:scale-105">

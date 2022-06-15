@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 export default function Review() {
-  const [review, setReview] = useState();
-  const [dec, setDec] = useState();
+  const [review, setReview] = useState(null);
+  const [dec, setDec] = useState(null);
   var activeSlide;
 
   const onSlideChange = (swiper) => {
