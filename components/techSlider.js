@@ -29,7 +29,7 @@ export default function TechSlider() {
               disableOnInteraction: false,
             }}
           loop={true}
-          className="myswiper "
+          className="myswiper"
           navigation= {{
             nextEl: '.button-next',
             prevEl: '.button-prev'
@@ -38,16 +38,16 @@ export default function TechSlider() {
         //   breakpoints={{
         //   640: {
         //     slidesPerView: 2,
-        //     spaceBetween: 20,
+        //     spaceBetween: 20
         //   },
         //   768: {
         //     slidesPerView: 4,
-        //     spaceBetween: 40,
+        //     spaceBetween: 40
         //   },
         //   1024: {
         //     slidesPerView: 5,
-        //     spaceBetween: 50,
-        //   },
+        //     spaceBetween: 50
+        //   }
         // }}
       >
         <SwiperSlide>
