@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function MemberCard(props) {
   return (
     <div className="flex flex-wrap justify-around mx-auto justify-items-center flex-col col-auto p-3 w-[250px] min-h-[250px] md:p-5 gap-0 even:bg-[#E8E8E8] transform duration-150 hover:scale-105">
-         <div className="w-[70px] h-[70px] md:w-[130px] md:h-[130px] mx-auto">
+         <div className="w-[70%] md:w-[130px] md:h-[130px] mx-auto">
           <Image
             objectFit="contain"
             src={props.img}

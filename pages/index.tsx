@@ -193,7 +193,7 @@ For over 5 years, we have been helping enterprises around the world to transform
         {/* for mobile */}
         <div className="container mx-auto md:hidden ">
         <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
-                Tech Stack
+               Our Sevices
               </h3>
           <TechSlider/>
         </div>
