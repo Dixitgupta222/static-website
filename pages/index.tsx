@@ -145,7 +145,7 @@ For over 5 years, we have been helping enterprises around the world to transform
       </div>
       {/* Tech Stack */}
       <div className="my-10 lg:my-24  xl:my-48 px-4 md:px-0 relative overflow-hidden ">
-        <div className="container mx-auto md:block hidden">
+        <div className="container mx-auto">
           <div className="grid md:grid-cols-12 gap-10">
             <div className="col-span-7 md:col-span-5 lg:col-start-9 flex flex-col justify-center order-2">
                 <div className="absolute w-[250px] md:h-[500px]  md:w-[470px] h-[225px] xl:w-[660px] xl:h-[600px] z-[-1] -right-[5%] hidden md:grid">
@@ -160,7 +160,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[55px] mb-5 md:mb-0 font-semibold text-[#323232]">
              Our Services
               </h3>
-              <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-center md:text-left hidden md:block ">
+              <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-left ">
               • Analytics & Data Services <br/>
               • Artificial Intelligence  <br/>
               • Automation<br/>
@@ -178,8 +178,8 @@ For over 5 years, we have been helping enterprises around the world to transform
                 </a>
               </Link> */}
             </div>
-            <div className="col-span-7">
-              <div className="relative hidden md:block">
+            <div className="col-span-7 md:order-1 order-2">
+              <div className="relative">
                 <Image
                   layout="responsive"
                   width={50}
@@ -191,12 +191,12 @@ For over 5 years, we have been helping enterprises around the world to transform
           </div>
         </div>
         {/* for mobile */}
-        <div className="container mx-auto md:hidden ">
+        {/* <div className="container mx-auto md:hidden ">
         <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
                Our Sevices
               </h3>
           <TechSlider/>
-        </div>
+        </div> */}
       </div>
       {/* Work Section */}
       {/* <div className=" bg-[#323232] px-4 md:px-0">

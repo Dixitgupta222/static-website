@@ -52,13 +52,13 @@ export default function Header(props) {
                   About
                 </a>
               </Link>
-              <Link href="/our-work">
+              {/* <Link href="/our-work">
                 <a
                   className={`font-poppins text-[18px] font-medium text-${props.color}`}
                 >
                   Our Work
                 </a>
-              </Link>
+              </Link> */}
               <Link href="/contact">
                 <a
                   className={`font-poppins text-[18px] font-medium text-${props.color}`}
@@ -84,7 +84,7 @@ export default function Header(props) {
          
             <div
             ref={mobileMenu}
-              className={`${show ? 'h-[200px]': 'h-0'} flex flex-col items-center shadow-md transition-all ease-in-out duration-150 justify-end absolute bg-white w-full left-0 overflow-hidden -z-10`}
+              className={`${show ? 'h-auto': 'h-0'} flex flex-col items-center shadow-md transition-all ease-in-out duration-150 justify-end absolute bg-white w-full left-0 overflow-hidden -z-10`}
             >
               <Link href="/about">
                 <a
@@ -93,13 +93,13 @@ export default function Header(props) {
                   About
                 </a>
               </Link>
-              <Link href="/our-work">
+              {/* <Link href="/our-work">
                 <a
                   className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-center p-5  font-medium text-[#000000]`}
                 >
                   Our Work
                 </a>
-              </Link>
+              </Link> */}
               <Link href="/contact">
                 <a
                   className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-center p-5  font-medium text-[#000000]`}
