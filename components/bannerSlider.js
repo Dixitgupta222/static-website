@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
-
 export default function BannerSlider() {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
