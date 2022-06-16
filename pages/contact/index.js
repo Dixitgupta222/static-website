@@ -51,7 +51,7 @@ export default function Contact() {
               phone="07314910077, 9424980001"
               email="WeKrypt@gmail.com"
             />
-         <Form bordercolor="#323232" label="#323232" align="center" button="#323232" buttonhover="white"/>
+         <Form bordercolor="#323232" label="#323232" align="center" button="#323232" buttonhover="white" textcolor="#323232"/>
         </div>
         </div>
       </div>

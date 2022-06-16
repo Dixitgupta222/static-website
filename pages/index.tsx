@@ -252,7 +252,7 @@ For over 5 years, we have been helping enterprises around the world to transform
               <h3 className="font-poppins uppercase text-[22px] text-center md:text-left md:text-[40px] pb-10 font-bold text-[#ffffff]">
               Ready to start, something great?
               </h3>
-              <Form bordercolor="#ffffff" label="#ffffff" button="#ffffff" buttonhover="#323232"/>
+              <Form bordercolor="#ffffff" label="#ffffff" button="#ffffff" buttonhover="#323232" textcolor="#ffffff"/>
             </div>
           </div>
         </div>

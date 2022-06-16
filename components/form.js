@@ -67,7 +67,7 @@ export default function Form(props) {
           First name
         </label>
         <input
-          className={`border-b border-[${props.bordercolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
+          className={`border-b border-[${props.bordercolor}] text-[${props.textcolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
           type="text"  {...register("fname", {required: true, maxLength: 80})}
         />
         {errors.fname && (<p className="text-red-700">Error</p>)}
@@ -77,7 +77,7 @@ export default function Form(props) {
           Last name
         </label>
         <input
-          className={`border-b border-[${props.bordercolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
+          className={`border-b border-[${props.bordercolor}] text-[${props.textcolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
           type="text" {...register("lname", {required: true, maxLength: 80})}
         />
          {errors.lname && (<p className="text-red-700">Error</p>)}
@@ -87,7 +87,7 @@ export default function Form(props) {
           Phone Number
         </label>
         <input
-          className={`border-b border-[${props.bordercolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
+          className={`border-b border-[${props.bordercolor}] text-[${props.textcolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
           type="tel"  {...register("number", {required: true, pattern: {value: /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i , message:"Invalid number.Please enter a valid number"}, minLength: 10})}
         />
          {errors.number && (errors.number.message != "" ? <p className=" text-red-700">{errors.number.message}</p> : <p className=" text-red-700">{errors.number.type}</p>)}
@@ -97,7 +97,7 @@ export default function Form(props) {
           Email
         </label>
         <input
-          className={`border-b border-[${props.bordercolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
+          className={`border-b border-[${props.bordercolor}] text-[${props.textcolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
           type="email"  {...register("email", {required: true, pattern: {value: /^\S+@\S+$/i , message:"Invalid Email.Please enter a valid email"}})}
         />
          {errors.email && (errors.email.message != "" ? <p className=" text-red-700">{errors.email.message}</p> : <p className=" text-red-700">{errors.email.type}</p>)}
@@ -108,7 +108,7 @@ export default function Form(props) {
         </label>
         <textarea
           rows={2}
-          className={`border-b border-[${props.bordercolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
+          className={`border-b border-[${props.bordercolor}] text-[${props.textcolor}] bg-transparent px-2 py-1 focus-within:outline-none`}
           type="text"  {...register("message", {required: true, maxLength: 1200})}
         />
          {errors.message && (<p className="text-red-700">Error</p>)}
