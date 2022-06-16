@@ -199,12 +199,12 @@ For over 5 years, we have been helping enterprises around the world to transform
         </div>
       </div>
       {/* Work Section */}
-      <div className=" bg-[#323232] px-4 md:px-0">
+      {/* <div className=" bg-[#323232] px-4 md:px-0">
         <div className="container mx-auto py-8 md:py-[50px] xl:py-[100px]">
           <h3 className="font-poppins text-[22px] md:text-[60px] font-bold text-[#ffffff] text-center pb-8  xl:pb-20">
             Our Work
           </h3>
-          {/* <div className="grid  gap-5">
+          <div className="grid  gap-5">
             <div className="">
               <div className="duration-150 overflow-hidden shadow-custom2 group">
                 <Link href="/">
@@ -220,12 +220,12 @@ For over 5 years, we have been helping enterprises around the world to transform
                 </Link>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="mt-10 mx-auto w-fit"> 
             <Button name='View All' url='/' type='light' />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Testimonial Section */}
       <div className="py-10 lg:py-28 lg:my-24 px-4 md:px-0 md:bg-[#ffffff] bg-[#EBF2FF] relative overflow-hidden">
         <div className="container mx-auto">
