@@ -16,9 +16,14 @@ export default function Header(props) {
 
   useEffect(() => {
     const handler = (event) => {
-      if (mobileMenu.current && !mobileMenu.current.contains(event.target) || mobileMenu.current.contains(event.target)) {
+      if (mobileMenu.current && !mobileMenu.current.contains(event.target)) {
         setShow(false)
-      };
+      }
+      else if(mobileMenu.current.contains(event.target)){
+        setInterval(() => {
+          setShow(false)
+        }, 500);
+      }
     }
     document.addEventListener("mousedown", handler);
     return () => {
