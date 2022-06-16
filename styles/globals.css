@@ -5,4 +5,5 @@
 
 .reviewSlider .swiper-pagination-bullet-active{
     background:#323232 !important;
+    z-index: 1;
 }

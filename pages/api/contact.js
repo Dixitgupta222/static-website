@@ -15,11 +15,16 @@ export default function handler(req, res) {
   })
   const mailData = {
     from:  req.body.email,
-    to: 'sales@vedanshtechnovision.com',
+    to: 'Wekrypt@gmail.com',
     subject: `Message From ${req.body.fname}`,
     text: req.body.message + " | Sent from: " + req.body.email,
-    html: `<div>${req.body.message}</div><p>Sent from:
-    ${req.body.email} Mobile:${req.body.number}</p>`
+    html: `<div>Hello Admin,<br/>
+    Your received new query from customer :-<br/>
+    First Name: ${req.body.fname}<br/>
+    Last Name: ${req.body.lname}<br/>
+    Mobile: ${req.body.number}<br/>
+    Email: ${req.body.email}<br/>
+    Message: ${req.body.message} </div>`
   }
   transporter.sendMail(mailData, function (err, info) {
     if(err)

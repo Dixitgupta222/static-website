@@ -37,7 +37,7 @@ export default function Header(props) {
           <Link href="/">
             <a>
               <h2 className={`text-[50px] font-inter font-bold transition-all ease-in-out duration-200 text-[#323232] z-30`}>
-              Wekrypt
+              WeKrypt
               </h2>
             </a>
           </Link>

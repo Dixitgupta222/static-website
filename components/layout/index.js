@@ -6,7 +6,7 @@ export default function Layout({ children,...props }) {
   return (
     <>
      <Head>
-        <title>Static Website</title>
+        <title>WeKrypt Technologies</title>
         <meta name="description" content="A simple Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

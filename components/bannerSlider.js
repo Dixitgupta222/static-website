@@ -47,7 +47,7 @@ export default function BannerSlider() {
                       We are
                     </h3>
                     <h3 className="font-inter text-[18px] px-10 md:px-0 text-center md:text-left md:text-[35px] lg:text-[45px] xl:text-[55px] font-bold  text-white">
-                    WeKrypt is End to End Product develeopmet
+                    WeKrypt is End to End Product development
                     </h3>
                     <Link href="/about">
                       <a className="font-bold text-[12px] md:text-[20px] text-white border-[1px] border-white mx-auto md:mx-0 py-[12px] px-[26px] mt-5 md:mt-10 block w-fit duration-150 hover:bg-white hover:text-[#323232]">

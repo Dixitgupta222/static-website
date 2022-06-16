@@ -184,7 +184,7 @@ For over 5 years, we have been helping enterprises around the world to transform
                   layout="responsive"
                   width={50}
                   height={50}
-                  src="/images/tech.png"
+                  src="/images/tech2.png"
                 />
               </div>
             </div>
@@ -204,7 +204,7 @@ For over 5 years, we have been helping enterprises around the world to transform
           <h3 className="font-poppins text-[22px] md:text-[60px] font-bold text-[#ffffff] text-center pb-8  xl:pb-20">
             Our Work
           </h3>
-          <div className="grid  gap-5">
+          {/* <div className="grid  gap-5">
             <div className="">
               <div className="duration-150 overflow-hidden shadow-custom2 group">
                 <Link href="/">
@@ -220,7 +220,7 @@ For over 5 years, we have been helping enterprises around the world to transform
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="mt-10 mx-auto w-fit"> 
             <Button name='View All' url='/' type='light' />
           </div>

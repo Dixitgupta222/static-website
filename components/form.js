@@ -1,5 +1,8 @@
-import React from "react";
+import React,{useState,useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
+import {
+  GrClose
+} from "react-icons/gr";
 export default function Form(props) {
   // const [fname, setFname] = useState('');
   // const [lname, setLname] = useState('');
@@ -17,7 +20,7 @@ export default function Form(props) {
   //   };
   //   console.log(data);
   // };
-  const { register, handleSubmit, formState: { errors,isSubmitting,isValid } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors,isSubmitting,isSubmitted } } = useForm();
   function onSubmit(data) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -37,9 +40,26 @@ export default function Form(props) {
         })
       }, 4000) 
       
-    })
-  
+    }) 
+    // console.log(data);
   }
+ 
+  const submitMsg = useRef();
+  useEffect(() => {
+    const handler = (event) => {
+      if (submitMsg.current && !submitMsg.current.contains(event.target)) {
+       reset();
+      };
+    }
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+  }, [])
+  const handleClose = () => {
+  reset();
+  }
+ 
   return (
     <form className="grid grid-cols-2 gap-4 md:gap-10" onSubmit={handleSubmit(onSubmit)}>
       <div className=" col-auto flex flex-col">
@@ -106,6 +126,18 @@ export default function Form(props) {
       } 
      
       </div>
+      {/* Popup */}
+      {isSubmitted && 
+      <div className="fixed flex items-center justify-center overflow-hidden w-full h-full bg-[#00000050] left-0 top-0">
+        <div ref={submitMsg} className="bg-white w-[760px] h-[350px] relative p-10 flex flex-col justify-center items-center">
+          <div className="absolute right-5 top-5 text-[20px] cursor-pointer" onClick={handleClose}><GrClose/></div>
+          <div className="w-fit mx-auto">
+            <img width={100} src="/images/ok.gif"/>
+          </div>
+          <p className="text-center font-poppins text-[25px] normal-case mt-5">Your query submitted successfully, We will contact you soon.</p>
+        </div>
+      </div>
+      }
     </form>
   );
 }

@@ -17,7 +17,7 @@ export default function footer() {
             <Link href="/">
               <a>
                 <h2 className="text-[40px] font-inter font-bold text-[#ffffff] leading-10 mb-4">
-                  Wekrypt
+                  WeKrypt
                 </h2>
               </a>
             </Link>
@@ -155,7 +155,7 @@ export default function footer() {
             <div className="flex md:flex-col gap-x-8 gap-2 justify-center flex-wrap md:gap-2">
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf] flex gap-2 items-center">
-                  <BsEnvelopeFill /> Wekrypt@gmail.com
+                  <BsEnvelopeFill /> WeKrypt@gmail.com
                 </a>
               </Link>
               <Link href="/">
@@ -198,7 +198,7 @@ export default function footer() {
           </div>
           <div className="col-span-4">
             <p className="font-poppins font-normal text-[12px] text-right text-[#ffffff] opacity-90 opacity-80">
-              Copyright © 2021 Wekrypt. All Rights Reserved.
+              Copyright © 2021 WeKrypt. All Rights Reserved.
             </p>
           </div>
         </div>
