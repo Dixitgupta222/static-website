@@ -26,7 +26,7 @@ export default function Header(props) {
       document.removeEventListener("mousedown", handler)
     } 
   }, [])
-Router.events.on('routeChangeStart', () =>setShow(false));
+Router.events.on('routeChangeStart', () =>setShow(false)); 
   
   const toggleMenu = () => {
    setShow(true)
