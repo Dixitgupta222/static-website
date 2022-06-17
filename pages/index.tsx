@@ -79,10 +79,10 @@ export default function Home() {
                   height={100}
                 />
               </div>
-              <h3 className="font-inter text-[30px] text-center md:text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
+              <h3 className="font-inter text-[30px] text-left md:text-[60px] mb-5 md:mb-0 font-semibold text-[#323232]">
                 Who We Are...?
               </h3>
-              <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-center md:text-left md:block ">
+              <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-left md:block ">
               We Krypt is partnering with companies to transform and manage their business by harnessing the power of technology. A software development company with a full cycle of services. 
 We mobilize expert teams that create custom solutions from existing and emerging technology to deliver viable outcomes at speed.
 For over 5 years, we have been helping enterprises around the world to transform business by creating effective digital solutions with the use of innovative technologies.
@@ -157,7 +157,7 @@ For over 5 years, we have been helping enterprises around the world to transform
                     objectFit='contain'
                   />
                 </div>
-              <h3 className="font-poppins text-[30px] text-center md:text-left md:text-[55px] mb-5 md:mb-0 font-semibold text-[#323232]">
+              <h3 className="font-poppins text-[30px] text-left md:text-[55px] mb-5 md:mb-0 font-semibold text-[#323232]">
              Our Services
               </h3>
               <p className="font-poppins text-[15px] md:text-[18px] leading-7 text-[#323232] xl:w-[430px] text-left ">

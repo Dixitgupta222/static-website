@@ -88,7 +88,7 @@ export default function Review() {
               id="review"
               className="font-poppins font-normal text-[14px] text-center lg:text-left leading-6 text-[#414141] lg:mr-28 mt-3"
             >
-              Totally satisfied working with 3ct. good work ethics and quality
+              Totally satisfied working with WeKrypt. good work ethics and quality
               work done accordingly. One of the best in this regard.
             </p>
             <p

@@ -54,10 +54,10 @@ export default function Experience(props) {
             </div>
           </div>
           <div className="col-auto md:col-span-7  flex flex-col justify-center lg:pl-10">
-            <h3 className="font-poppins text-center uppercase lg:text-left my-3 md:m-0 text-[25px] md:text-[45px] font-bold text-[#323232] lg:text-[#ffffff]">
+            <h3 className="font-poppins text-left uppercase my-3 md:m-0 text-[25px] md:text-[45px] font-bold text-[#323232] lg:text-[#ffffff]">
               Immersive Experience
             </h3>
-            <p className="font-poppins text-[15px] text-center lg:text-left md:text-[18px] leading-7 text-[#323232] lg:text-[#ffffff] ">
+            <p className="font-poppins text-[15px] text-left md:text-[18px] leading-7 text-[#323232] lg:text-[#ffffff] ">
               With WeKrypt experts in your local market and around the world,
               our approach ensures the right delivery for your business. Your
               business is unique and at WeKrypt , we have the proven experience

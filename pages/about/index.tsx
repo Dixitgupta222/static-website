@@ -28,13 +28,13 @@ export default function About() {
                   height={100}
                 />
               </div>
-              <h2 className="font-poppins font-bold uppercase text-center md:text-left text-[20px] md:text-[45px] lg:text-[60px] text-[#000000] opacity-20">
+              <h2 className="font-poppins font-bold uppercase text-left text-[20px] md:text-[45px] lg:text-[60px] text-[#000000] opacity-20">
                 About US
               </h2>
-              <h2 className="font-poppins font-bold capitalize text-center md:text-left text-[30px] md:text-[45px] lg:text-[60px] text-[#323232]">
+              <h2 className="font-poppins font-bold capitalize text-left text-[30px] md:text-[45px] lg:text-[60px] text-[#323232]">
                 Who We Are...?
               </h2>
-              <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
+              <p className="font-poppins font-normal normal-case text-[15px] text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
                 WeKrypt capitalizes on the strength of our numerous combined
                 synergies and core capabilities including: deep domain and
                 delivery expertise, focus on micro-verticals, suites of IP-led
@@ -42,7 +42,7 @@ export default function About() {
                 and service partnerships secure & scalable delivery
                 infrastructure across geographies.
             </p>
-            <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
+            <p className="font-poppins font-normal normal-case text-[15px] text-left md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
                 Our customer footprint spans
                 across verticals like banking & financial services, insurance &
                 healthcare, life sciences, manufacturing, retail, distribution &
@@ -50,7 +50,7 @@ export default function About() {
                 communication, energy & utilities, federal government, and
                 independent software vendors
                 </p>
-              <p className="font-poppins font-normal normal-case text-[15px] text-center md:text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
+              <p className="font-poppins font-normal normal-case text-[15px] text-left py-4 md:text-[18px] leading-7 text-[#323232] break-words md:pr-24">
                 Our comprehensive portfolio of
                 services includes application development and management,
                 verification & validation, enterprise application solutions,
