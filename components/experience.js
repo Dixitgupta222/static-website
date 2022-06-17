@@ -63,7 +63,7 @@ export default function Experience(props) {
               business is unique and at WeKrypt , we have the proven experience
               and global power to create a delivery plan that is tailored
               specifically for your needs. With experts locally and globally,
-              WeKrypt works closely with you to match your individual business
+              WeKrypt works closely with you to match your individual business 
               needs with the most advantageous mix of delivery options, ensuring
               the right delivery to meet your business goals
             </p>
