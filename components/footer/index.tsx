@@ -143,7 +143,7 @@ export default function footer() {
               </Link>
               <Link href="/">
                 <a className="font-poppins font-normal text-[14px] text-[#ffffff] opacity-90 hover:text-[#cfcfcf]">
-                  Nidarlend
+                Netherlands
                 </a>
               </Link>
             </div>
