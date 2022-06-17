@@ -69,7 +69,7 @@ export default function Home() {
       {/* Who we are section */}
       <div className=" my-10 lg:my-24 px-4 md:px-0 relative overflow-hidden">
         <div className="container mx-auto bg-[url('/images/whoweare-bg2.png')] bg-no-repeat bg-cover">
-          <div className="grid md:grid-cols-12 lg:mt-40">
+          <div className="grid md:grid-cols-12 lg:mt-20">
             <div className="col-span-7 md:col-span-5 flex flex-col justify-center">
               <div className="absolute w-[250px] h-[225px] xl:w-[660px] xl:h-[600px]  md:w-[450px] md:h-[auto] lg:w-[550px]  lg:h-[500px] z-[-1] -left-[8%]">
                 <Image
@@ -144,7 +144,7 @@ For over 5 years, we have been helping enterprises around the world to transform
         </div>
       </div>
       {/* Tech Stack */}
-      <div className="my-10 lg:my-24  xl:my-48 px-4 md:px-0 relative overflow-hidden ">
+      <div className="my-10 lg:my-24 px-4 md:px-0 relative overflow-hidden ">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-12 gap-10">
             <div className="col-span-7 md:col-span-5 lg:col-start-9 flex flex-col justify-center order-2">
