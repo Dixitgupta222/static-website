@@ -151,7 +151,7 @@ For over 5 years, we have been helping enterprises around the world to transform
                 <div className="absolute w-[250px] md:h-[500px]  md:w-[470px] h-[225px] xl:w-[660px] xl:h-[600px] z-[-1] -right-[5%] hidden md:grid">
                   <Image
                     src="/images/techbg.png"
-                    layout='responsive'
+                    layout='responsive' 
                     width={100}
                     height={100}
                     objectFit='contain'
