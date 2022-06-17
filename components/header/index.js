@@ -2,6 +2,8 @@ import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
+import Router from 'next/router';
+
 
 export default function Header(props) {
   const [width, setWidth] = useState("0");
@@ -13,16 +15,10 @@ export default function Header(props) {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, [width]);
   
-
   useEffect(() => {
     const handler = (event) => {
       if (mobileMenu.current && !mobileMenu.current.contains(event.target)) {
         setShow(false)
-      }
-      else if(mobileMenu.current.contains(event.target)){
-        setInterval(() => {
-          setShow(false)
-        }, 500);
       }
     }
     document.addEventListener("mousedown", handler);
@@ -30,13 +26,14 @@ export default function Header(props) {
       document.removeEventListener("mousedown", handler)
     }
   }, [])
+Router.events.on('routeChangeStart', () =>setShow(false));
   
   const toggleMenu = () => {
    setShow(true)
   }
   return (
     <div className="absolute w-full left-0 top-[17px] px-4 md:px-0 h-auto bg-white z-50">
-      <div className="container mx-auto relative">
+      <div className="container mx-auto static">
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-3">
           <Link href="/">
@@ -86,9 +83,9 @@ export default function Header(props) {
           </div>)}
           {/* mobile menu */}
 
-         
+         <div className="absolute w-full left-0 h-screen z-0"   ref={mobileMenu}>
             <div
-            ref={mobileMenu}
+          
               className={`${show ? 'h-auto': 'h-0'} flex flex-col items-center shadow-md transition-all ease-in-out duration-150 justify-end absolute bg-white w-full left-0 overflow-hidden -z-10`}
             >
               <Link href="/about">
@@ -113,7 +110,7 @@ export default function Header(props) {
                 </a>
               </Link>
             </div>
-        
+          </div>
         </div>
       </div>
     </div>
