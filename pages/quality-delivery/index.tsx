@@ -178,7 +178,7 @@ export default function QualityDelivery() {
                   img={item.imgURL}
                   btnType={item.btn.type}
                   btnLink={item.btn.link}
-                />
+                /> 
               ))}
             </div>
           </div>
