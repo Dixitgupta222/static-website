@@ -107,6 +107,7 @@ export default function CloudServices() {
             <div className="flex flex-col flex-wrap justify-center col-auto">
               {data.map((item, i) => (
                 <ImageBox
+                  key={i}
                   title={item.title}
                   dec={item.dec}
                   img={item.imgURL}

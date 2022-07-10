@@ -59,7 +59,7 @@ export default function Blockchain() {
               </div>
               <div className="pt-4">
                 <h3 className="font-poppins font-semibold normal-case text-[18px] text-left md:text-[18px] text-[#323232] break-words">
-                  Where It's Going
+                  Where It&apos;s Going
                 </h3>
                 <p className="font-poppins font-normal normal-case text-[18px] text-left md:text-[18px] leading-8 text-[#323232] break-words md:pr-10">
                   Through a combination of blockchain, biometrics and identity,

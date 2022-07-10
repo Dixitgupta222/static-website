@@ -44,7 +44,7 @@ export default function AutomationServices() {
                 improving processes with AI and designing new learning processes
                 around it. Supported through organizational change and continual
                 reskilling. Most AI and automation conversations focus on
-                technology—that's the easy part. We work holistically across
+                technology—that&apos;s the easy part. We work holistically across
                 people, processes and business functions to ensure your
                 initiatives are deployed and scaled for maximum ROI.
               </p>
