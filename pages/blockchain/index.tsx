@@ -80,7 +80,7 @@ export default function Blockchain() {
             <h2 className="font-poppins font-semibold pb-4 capitalize text-left text-[20px] md:text-[40px] text-[#323232] break-words">
             WeKrypt – Industries – Separate header/Page
               </h2>
-            </div>
+            </div> 
             <div className="flex flex-col flex-wrap justify-center col-span-3 gap-8 md:col-auto">
               <Link href="#">
                 <a className="font-poppins font-normal capitalize text-left text-[20px] text-[#000000] opacity-70 flex gap-3 items-center">
