@@ -10,7 +10,7 @@ import {
 export default function footer() {
   return (
     <div className="bg-[#323232] md:pt-24 pt-10 pb-5  px-4 md:px-0">
-      <div className="container mx-auto relative">
+      <div className="container mx-auto relative" style={{wordBreak:"break-word"}}>
         <div className="grid md:grid-cols-12 gap-4 md:gap-y-4 gap-y-10">
           <div className="col-span-2 md:col-span-3 relative">
             <div className="devider lg:hidden block h-[1px] w-full bg-[#FFFFFF] opacity-20 absolute -bottom-5 left-0"></div>
