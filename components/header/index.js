@@ -29,7 +29,7 @@ export default function Header(props) {
   }, []);
   useEffect(() => {
     const handler = (event) => {
-      if (submenu.current && !submenu.current.contains(event.target)) {
+      if (submenu.current && submenu.current.contains(event.target)) {
         setShowSubmenu(false);
       }
     };
@@ -40,7 +40,7 @@ export default function Header(props) {
   }, []);
   Router.events.on("routeChangeStart", () => {
     setShow(false);
-    setShowSubmenu(false)
+    // setShowSubmenu(false)
   });
 
   const toggleMenu = () => {
@@ -74,7 +74,7 @@ export default function Header(props) {
 
                 <div
                   className={`font-poppins text-[18px] font-medium relative text-${props.color} cursor-pointer`}
-                  onClick={()=> setShowSubmenu(true)}
+                  onClick={()=> setShowSubmenu(!showSubmenu)}
                 >
                   Services
                   {
@@ -172,7 +172,7 @@ export default function Header(props) {
                 </Link>
                 <div
                   className={`font-poppins text-[18px] p-5 font-medium relative text-${props.color} cursor-pointer`}
-                  onClick={()=> setShowSubmenu(!false)}
+                  onClick={()=> setShowSubmenu(!showSubmenu)}
                 >
                   Services
                 </div>
