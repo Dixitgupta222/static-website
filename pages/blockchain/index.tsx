@@ -19,7 +19,7 @@ export default function Blockchain() {
         <div className="container px-4 md:px-0">
           <div className="grid gap-5 lg:grid-cols-1">
             <div className="col-auto">
-              <div className="w-full rounded-[15px] relative h-[450px] overflow-hidden">
+              <div className="w-full rounded-[15px] relative h-[200px] md:h-[450px] overflow-hidden">
                 <Image
                   src="/images/blockchain.png"
                   layout="fill"

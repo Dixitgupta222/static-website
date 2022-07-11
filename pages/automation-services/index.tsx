@@ -19,7 +19,7 @@ export default function AutomationServices() {
         <div className="container px-4 md:px-0">
           <div className="grid gap-5 lg:grid-cols-1">
             <div className="col-auto">
-              <div className="w-full relative h-[450px] rounded-[15px] overflow-hidden">
+              <div className="w-full relative h-[200px] md:h-[450px] rounded-[15px] overflow-hidden">
                 <Image
                   src="/images/automation.png"
                   layout="fill"
