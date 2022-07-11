@@ -8,6 +8,7 @@ export default function Header(props) {
   const [width, setWidth] = useState("0");
   const [show, setShow] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
+  const [submenumebile, setSubmenumobile] = useState(false);
   // console.log('header'+props.color)
   const mobileMenu = useRef(null);
   const submenu = useRef(null);
@@ -31,6 +32,17 @@ export default function Header(props) {
     const handler = (event) => {
       if (submenu.current && submenu.current.contains(event.target)) {
         setShowSubmenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
+  useEffect(() => {
+    const handler = (event) => {
+      if (submenu.current && !submenu.current.contains(event.target)) {
+        setSubmenumobile(false);
       }
     };
     document.addEventListener("mousedown", handler);
@@ -172,12 +184,12 @@ export default function Header(props) {
                 </Link>
                 <div
                   className={`font-poppins text-[18px] p-5 font-medium relative text-${props.color} cursor-pointer`}
-                  onClick={()=> setShowSubmenu(!showSubmenu)}
+                  onClick={()=> setSubmenumobile(!submenumebile)}
                 >
                   Services
                 </div>
                 {
-                    showSubmenu && 
+                    submenumebile && 
                     <div ref={submenu} className="bg-white flex flex-col w-[400px] gap-5 text-center p-5 shadow-custom">
                     <Link href="/data-and-artifical-intelligence">
                       <a
@@ -193,7 +205,7 @@ export default function Header(props) {
                         Quality Delivery
                       </a>
                     </Link>
-                    <Link href="/cloud-services">  
+                    <Link href="/cloud-services"> 
                       <a
                         className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                       >
