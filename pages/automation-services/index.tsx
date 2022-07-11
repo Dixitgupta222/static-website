@@ -23,7 +23,7 @@ export default function AutomationServices() {
                 <Image
                   src="/images/automation.png"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="cover" 
                   width={100}
                   height={100}
                 />
