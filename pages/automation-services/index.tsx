@@ -7,7 +7,7 @@ export default function AutomationServices() {
     <>
       <div className="bg-[url('/images/automation-banner.png')] md:bg-[url('/images/automation-banner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="container px-4 md:px-0">
-          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[500px]">
+          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[350px]">
             <h2 className="font-poppins font-bold capitalize text-[20px] md:text-[50px] text-white">
               Automation Services
             </h2>
@@ -19,13 +19,13 @@ export default function AutomationServices() {
         <div className="container px-4 md:px-0">
           <div className="grid gap-5 lg:grid-cols-1">
             <div className="col-auto">
-              <div className="w-full rounded-[15px] overflow-hidden">
+              <div className="w-full relative h-[450px] rounded-[15px] overflow-hidden">
                 <Image
                   src="/images/automation.png"
-                  layout="responsive"
+                  layout="fill"
                   objectFit="cover"
                   width={100}
-                  height={50}
+                  height={100}
                 />
               </div>
             </div>

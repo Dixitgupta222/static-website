@@ -9,7 +9,7 @@ export default function DataIntelligence() {
     <>
       <div className="bg-[url('/images/data-and-artifical-intelligence_banner.png')] md:bg-[url('/images/data-and-artifical-intelligence_banner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="container px-4 md:px-0">
-          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[500px]">
+          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[350px]">
             <h2 className="font-poppins font-bold uppercase text-[20px] md:text-[50px] text-white">
             DATA AND ARTIFICIAL INTELLIGENCE
             </h2>
