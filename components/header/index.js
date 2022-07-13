@@ -7,7 +7,7 @@ import Router from "next/router";
 export default function Header(props) {
   const [width, setWidth] = useState("0");
   const [show, setShow] = useState(false);
-  const [showSubmenu, setShowSubmenu] = useState(false);
+  const [showSubmenu, setShowSubmenu] = useState(true);
   const [submenumebile, setSubmenumobile] = useState(false);
   // console.log('header'+props.color)
   const mobileMenu = useRef(null);
@@ -98,7 +98,7 @@ export default function Header(props) {
                     <div
                     // onMouseOver={() => setShowSubmenu(true)}
                       ref={submenu}
-                      className="bg-white absolute flex flex-col w-[400px] gap-5 text-left -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
+                      className="bg-white absolute flex flex-col w-max gap-5 text-left -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
                     >
                       <Link href="/data-and-artifical-intelligence">
                         <a
@@ -198,7 +198,7 @@ export default function Header(props) {
                 {submenumebile && (
                   <div
                     ref={mobilesubmenu}
-                    className="bg-white flex flex-col w-[400px] gap-5 text-left p-5 shadow-custom3"
+                    className="bg-white flex flex-col gap-5 text-left w-full p-5 shadow-custom3"
                   >
                     <Link href="/data-and-artifical-intelligence">
                       <a
