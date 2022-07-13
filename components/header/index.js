@@ -94,11 +94,11 @@ export default function Header(props) {
                   onMouseOut={() => setShowSubmenu(false)}
                 >
                   Services
-                  {showSubmenu && (
+                  {showSubmenu && ( 
                     <div
                     // onMouseOver={() => setShowSubmenu(true)}
                       ref={submenu}
-                      className="bg-white absolute flex flex-col w-[400px] gap-5 text-center -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
+                      className="bg-white absolute flex flex-col w-[400px] gap-5 text-left -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
                     >
                       <Link href="/data-and-artifical-intelligence">
                         <a
@@ -184,13 +184,13 @@ export default function Header(props) {
               >
                 <Link href="/about">
                   <a
-                    className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-center p-5  font-medium text-[#000000]`}
+                    className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-left p-5  font-medium text-[#000000]`}
                   >
                     About
                   </a>
                 </Link>
                 <div
-                  className={`font-poppins text-[18px] p-5 font-medium relative text-${props.color} cursor-pointer has-submenu ${submenumebile && "active"}`}
+                  className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${props.color} cursor-pointer has-submenu ${submenumebile && "active"}`}
                   onClick={() => setSubmenumobile(!submenumebile)}
                 >
                   Services
@@ -198,7 +198,7 @@ export default function Header(props) {
                 {submenumebile && (
                   <div
                     ref={mobilesubmenu}
-                    className="bg-white flex flex-col w-[400px] gap-5 text-center p-5 shadow-custom"
+                    className="bg-white flex flex-col w-[400px] gap-5 text-left p-5 shadow-custom3"
                   >
                     <Link href="/data-and-artifical-intelligence">
                       <a
@@ -246,7 +246,7 @@ export default function Header(props) {
                 )}
                 <Link href="/contact">
                   <a
-                    className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-center p-5  font-medium text-[#000000]`}
+                    className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-left p-5  font-medium text-[#000000]`}
                   >
                     Contact us
                   </a>

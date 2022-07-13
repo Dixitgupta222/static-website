@@ -117,7 +117,7 @@ export default function AutomationServices() {
             <div className="col-auto">
               <div className="w-full overflow-hidden">
                 <Image
-                  src="/images/plan.png"
+                  src="/images/manage.png"
                   layout="responsive"
                   objectFit="contain"
                   width={100}
