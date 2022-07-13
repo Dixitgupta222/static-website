@@ -26,7 +26,7 @@ export default function Header(props) {
     };
     document.addEventListener("mousedown", handler);
     return () => {
-      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("mousedown", handler); 
     };
   }, []);
   useEffect(() => {
