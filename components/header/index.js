@@ -244,7 +244,7 @@ export default function Header(props) {
                     </Link>
                   </div>
                 )}
-                <Link href="/contact">
+                <Link href="/contact"> 
                   <a
                     className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-left p-5  font-medium text-[#000000]`}
                   >
