@@ -12,6 +12,7 @@ export default function Header(props) {
   // console.log('header'+props.color)
   const mobileMenu = useRef(null);
   const submenu = useRef(null);
+  const mobilesubmenu = useRef(null);
   useEffect(() => {
     setWidth(window.innerWidth);
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -34,25 +35,28 @@ export default function Header(props) {
         setShowSubmenu(false);
       }
     };
-    document.addEventListener("mousedown", handler);
+    document.addEventListener("mouseout", handler);
     return () => {
-      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("mouseout", handler);
     };
   }, []);
-  useEffect(() => {
-    const handler = (event) => {
-      if (submenu.current && !submenu.current.contains(event.target)) {
-        setSubmenumobile(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handler = (event) => {
+  //     if (
+  //       mobilesubmenu.current &&
+  //       !mobilesubmenu.current.contains(event.target)
+  //     ) {
+  //       setSubmenumobile(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handler);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handler);
+  //   };
+  // }, []);
   Router.events.on("routeChangeStart", () => {
     setShow(false);
-    // setShowSubmenu(false)
+    setShowSubmenu(false);
   });
 
   const toggleMenu = () => {
@@ -78,70 +82,73 @@ export default function Header(props) {
               <div className="flex flex-row items-center justify-end h-full gap-10 capitalize">
                 <Link href="/about">
                   <a
-                    className={`font-poppins text-[18px] font-medium text-${props.color}`}
+                    className={`font-poppins text-[18px] font-medium h-full flex items-center text-${props.color}`}
                   >
                     About
                   </a>
                 </Link>
 
                 <div
-                  className={`font-poppins text-[18px] font-medium relative text-${props.color} cursor-pointer`}
-                  onClick={()=> setShowSubmenu(!showSubmenu)}
+                  className={`font-poppins text-[18px] font-medium relative text-${props.color} cursor-pointer h-full flex items-center has-submenu ${showSubmenu && "active"}`}
+                  onMouseOver={() => setShowSubmenu(true)} 
+                  onMouseOut={() => setShowSubmenu(false)}
                 >
                   Services
-                  {
-                    showSubmenu && 
-                    <div ref={submenu} className="bg-white absolute flex flex-col w-[400px] gap-5 text-center -right-full top-[50px] transform translate-x-[20%] p-5 z-[99] shadow-custom">
-                    <Link href="/data-and-artifical-intelligence">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Data and Artifical Intelligence
-                      </a>
-                    </Link>
-                    <Link href="/quality-delivery">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Quality Delivery
-                      </a>
-                    </Link>
-                    <Link href="/cloud-services">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Cloud Services
-                      </a>
-                    </Link>
-                    <Link href="/cybersecurity">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Cybersecurity & DevSecOps 
-                      </a>
-                    </Link>
-                    <Link href="/automation-services">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Automation Services
-                      </a>
-                    </Link>
-                    <Link href="/blockchain">
-                      <a
-                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
-                      >
-                        Blockchain
-                      </a>
-                    </Link>
-                  </div>
-                  }
-                  
+                  {showSubmenu && (
+                    <div
+                    // onMouseOver={() => setShowSubmenu(true)}
+                      ref={submenu}
+                      className="bg-white absolute flex flex-col w-[400px] gap-5 text-center -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
+                    >
+                      <Link href="/data-and-artifical-intelligence">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Data and Artifical Intelligence
+                        </a>
+                      </Link>
+                      <Link href="/quality-delivery">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Quality Delivery
+                        </a>
+                      </Link>
+                      <Link href="/cloud-services">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Cloud Services
+                        </a>
+                      </Link>
+                      <Link href="/cybersecurity">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Cybersecurity & DevSecOps
+                        </a>
+                      </Link>
+                      <Link href="/automation-services">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Automation Services
+                        </a>
+                      </Link>
+                      <Link href="/blockchain">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Blockchain
+                        </a>
+                      </Link>
+                    </div>
+                  )}
                 </div>
 
                 <Link href="/contact">
                   <a
-                    className={`font-poppins text-[18px] font-medium text-${props.color}`}
+                    className={`font-poppins text-[18px] font-medium h-full flex items-center text-${props.color}`}
                   >
                     Contact us
                   </a>
@@ -183,14 +190,16 @@ export default function Header(props) {
                   </a>
                 </Link>
                 <div
-                  className={`font-poppins text-[18px] p-5 font-medium relative text-${props.color} cursor-pointer`}
-                  onClick={()=> setSubmenumobile(!submenumebile)}
+                  className={`font-poppins text-[18px] p-5 font-medium relative text-${props.color} cursor-pointer has-submenu ${submenumebile && "active"}`}
+                  onClick={() => setSubmenumobile(!submenumebile)}
                 >
                   Services
                 </div>
-                {
-                    submenumebile && 
-                    <div ref={submenu} className="bg-white flex flex-col w-[400px] gap-5 text-center p-5 shadow-custom">
+                {submenumebile && (
+                  <div
+                    ref={mobilesubmenu}
+                    className="bg-white flex flex-col w-[400px] gap-5 text-center p-5 shadow-custom"
+                  >
                     <Link href="/data-and-artifical-intelligence">
                       <a
                         className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
@@ -205,7 +214,7 @@ export default function Header(props) {
                         Quality Delivery
                       </a>
                     </Link>
-                    <Link href="/cloud-services"> 
+                    <Link href="/cloud-services">
                       <a
                         className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                       >
@@ -216,7 +225,7 @@ export default function Header(props) {
                       <a
                         className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                       >
-                        Cybersecurity & DevSecOps 
+                        Cybersecurity & DevSecOps
                       </a>
                     </Link>
                     <Link href="/automation-services">
@@ -234,7 +243,7 @@ export default function Header(props) {
                       </a>
                     </Link>
                   </div>
-                  }
+                )}
                 <Link href="/contact">
                   <a
                     className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-center p-5  font-medium text-[#000000]`}

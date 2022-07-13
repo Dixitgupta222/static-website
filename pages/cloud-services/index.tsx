@@ -52,7 +52,7 @@ export default function CloudServices() {
     <>
       <div className="bg-[url('/images/cloud-banner.png')] md:bg-[url('/images/cloud-banner.png')] bg-bottom bg-no-repeat bg-cover">
         <div className="container px-4 md:px-0">
-          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[350px]">
+          <div className="flex flex-wrap items-center justify-center h-[250px] md:h-[300px] lg:h-[350px] text-center">
             <h2 className="font-poppins font-bold capitalize text-[20px] md:text-[50px] text-white">
               Quality Delivery
             </h2>

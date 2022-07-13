@@ -12,7 +12,8 @@ module.exports = {
       },
       boxShadow: {
         'custom': '0px 0px 10px rgba(0, 0, 0, 0.1);',
-        'custom2': '0 0 20px rgba(255, 255, 255, 0.25);'
+        'custom2': '0 0 20px rgba(255, 255, 255, 0.25);',
+        'custom3': '0 10px 20px rgb(126 126 126 / 25%);'
       },
       backgroundSize: {
         '110': '110%',

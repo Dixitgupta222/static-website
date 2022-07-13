@@ -12,3 +12,18 @@
         order: 2;
     }
 }
+.has-submenu::after{
+    content:'';
+    background-image:url('/images/submenuicon.png');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
+    background-position: bottom center;
+    margin-left: 5px;
+    display: inline-block;
+}
+.active.has-submenu::after{
+    transform: rotate(-180deg);
+}
