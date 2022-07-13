@@ -108,7 +108,7 @@ export default function Header(props) {
                         </a>
                       </Link>
                       <Link href="/quality-delivery">
-                        <a
+                        <a 
                           className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                         >
                           Quality Delivery
