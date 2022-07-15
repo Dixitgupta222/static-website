@@ -73,7 +73,7 @@ export default function Blockchain() {
           </div>
         </div>
       </div>
-      <div className="relative py-10 overflow-hidden ">
+      {/* <div className="relative py-10 overflow-hidden ">
         <div className="container px-4 md:px-0">
           <div className="grid lg:gap-x-10 gap-5 md:grid-cols-3 bg-[#F6F6F6] p-16">
             <div className="flex flex-col flex-wrap justify-center col-span-3">
@@ -164,7 +164,7 @@ export default function Blockchain() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
