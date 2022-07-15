@@ -402,7 +402,7 @@ export default function Header(props) {
                   } cursor-pointer has-submenu ${submenumebileIndustry && "active"}`}
                   onClick={() => setSubmenumobileIndustry(!submenumebileIndustry)}
                 >
-                  Industries
+                  Industries 
                 </div>
                 {submenumebileIndustry && (
                   <div
