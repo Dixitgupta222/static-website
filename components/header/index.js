@@ -7,11 +7,14 @@ import Router from "next/router";
 export default function Header(props) {
   const [width, setWidth] = useState("0");
   const [show, setShow] = useState(false);
-  const [showSubmenu, setShowSubmenu] = useState(true);
-  const [submenumebile, setSubmenumobile] = useState(false);
+  const [showSubmenuService, setShowSubmenuService] = useState(false);
+  const [showSubmenuIndustry, setShowSubmenuIndustry] = useState(false);
+  const [submenumebileService, setSubmenumobileService] = useState(false);
+  const [submenumebileIndustry, setSubmenumobileIndustry] = useState(false);
   // console.log('header'+props.color)
   const mobileMenu = useRef(null);
-  const submenu = useRef(null);
+  const submenuService = useRef(null);
+  const submenuIndustry = useRef(null);
   const mobilesubmenu = useRef(null);
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -26,13 +29,30 @@ export default function Header(props) {
     };
     document.addEventListener("mousedown", handler);
     return () => {
-      document.removeEventListener("mousedown", handler); 
+      document.removeEventListener("mousedown", handler);
     };
   }, []);
   useEffect(() => {
     const handler = (event) => {
-      if (submenu.current && submenu.current.contains(event.target)) {
-        setShowSubmenu(false);
+      if (
+        submenuService.current &&
+        submenuService.current.contains(event.target)
+      ) {
+        setShowSubmenuService(false);
+      }
+    };
+    document.addEventListener("mouseout", handler);
+    return () => {
+      document.removeEventListener("mouseout", handler);
+    };
+  }, []);
+  useEffect(() => {
+    const handler = (event) => {
+      if (
+        submenuIndustry.current &&
+        submenuIndustry.current.contains(event.target)
+      ) {
+        setShowSubmenuIndustry(false);
       }
     };
     document.addEventListener("mouseout", handler);
@@ -56,7 +76,8 @@ export default function Header(props) {
   // }, []);
   Router.events.on("routeChangeStart", () => {
     setShow(false);
-    setShowSubmenu(false);
+    setShowSubmenuService(false);
+    setShowSubmenuIndustry(false);
   });
 
   const toggleMenu = () => {
@@ -89,15 +110,19 @@ export default function Header(props) {
                 </Link>
 
                 <div
-                  className={`font-poppins text-[18px] font-medium relative text-${props.color} cursor-pointer h-full flex items-center has-submenu ${showSubmenu && "active"}`}
-                  onMouseOver={() => setShowSubmenu(true)} 
-                  onMouseOut={() => setShowSubmenu(false)}
+                  className={`font-poppins text-[18px] font-medium relative text-${
+                    props.color
+                  } cursor-pointer h-full flex items-center has-submenu ${
+                    showSubmenuService && "active"
+                  }`}
+                  onMouseOver={() => setShowSubmenuService(true)}
+                  onMouseOut={() => setShowSubmenuService(false)}
                 >
                   Services
-                  {showSubmenu && ( 
+                  {showSubmenuService && (
                     <div
-                    // onMouseOver={() => setShowSubmenu(true)}
-                      ref={submenu}
+                      // onMouseOver={() => setShowSubmenu(true)}
+                      ref={submenuService}
                       className="bg-white absolute flex flex-col w-max gap-5 text-left -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
                     >
                       <Link href="/data-and-artifical-intelligence">
@@ -108,7 +133,7 @@ export default function Header(props) {
                         </a>
                       </Link>
                       <Link href="/quality-delivery">
-                        <a 
+                        <a
                           className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                         >
                           Quality Delivery
@@ -140,6 +165,131 @@ export default function Header(props) {
                           className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
                         >
                           Blockchain
+                        </a>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                <div
+                  className={`font-poppins text-[18px] font-medium relative text-${
+                    props.color
+                  } cursor-pointer h-full flex items-center has-submenu ${
+                    showSubmenuIndustry && "active"
+                  }`}
+                  onMouseOver={() => setShowSubmenuIndustry(true)}
+                  onMouseOut={() => setShowSubmenuIndustry(false)}
+                >
+                  Industries
+                  {showSubmenuIndustry && (
+                    <div
+                      // onMouseOver={() => setShowSubmenu(true)}
+                      ref={submenuIndustry}
+                      className="bg-white absolute flex flex-col w-max gap-5 text-left -right-full top-full transform translate-x-[20%] p-5 z-[99] shadow-custom3"
+                    >
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Aerospace And Defense
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Automotive
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Banking And Capital Markets
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Consumer Products
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Consumer Products
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Healthcare
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          High-Tech
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Hospitality And Travel
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Insurance
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Life Sciences
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Manufacturing
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Media And Entertainment
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Public Sector
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Retail
+                        </a>
+                      </Link>
+                      <Link href="">
+                        <a
+                          className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                        >
+                          Telecoms
                         </a>
                       </Link>
                     </div>
@@ -190,12 +340,14 @@ export default function Header(props) {
                   </a>
                 </Link>
                 <div
-                  className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${props.color} cursor-pointer has-submenu ${submenumebile && "active"}`}
-                  onClick={() => setSubmenumobile(!submenumebile)}
+                  className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${
+                    props.color
+                  } cursor-pointer has-submenu ${submenumebileService && "active"}`}
+                  onClick={() => setSubmenumobileService(!submenumebileService)}
                 >
                   Services
                 </div>
-                {submenumebile && (
+                {submenumebileService && (
                   <div
                     ref={mobilesubmenu}
                     className="bg-white flex flex-col gap-5 text-left w-full p-5 shadow-custom3"
@@ -244,7 +396,129 @@ export default function Header(props) {
                     </Link>
                   </div>
                 )}
-                <Link href="/contact"> 
+                <div
+                  className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${
+                    props.color
+                  } cursor-pointer has-submenu ${submenumebileIndustry && "active"}`}
+                  onClick={() => setSubmenumobileIndustry(!submenumebileIndustry)}
+                >
+                  Industries
+                </div>
+                {submenumebileIndustry && (
+                  <div
+                    // onMouseOver={() => setShowSubmenu(true)}
+                    ref={mobilesubmenu}
+                    className="bg-white flex flex-col gap-5 text-left w-full p-5 shadow-custom3"
+                  >
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Aerospace And Defense
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Automotive
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Banking And Capital Markets
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Consumer Products
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Consumer Products
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Healthcare
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        High-Tech
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Hospitality And Travel
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Insurance
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Life Sciences
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Manufacturing
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Media And Entertainment
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Public Sector
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Retail
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a
+                        className={`font-poppins capitalize text-[18px] font-medium text-${props.color}`}
+                      >
+                        Telecoms
+                      </a>
+                    </Link>
+                  </div>
+                )}
+
+                <Link href="/contact">
                   <a
                     className={`font-poppins text-[18px] hover:bg-slate-300 w-full text-left p-5  font-medium text-[#000000]`}
                   >
