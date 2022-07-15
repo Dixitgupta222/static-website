@@ -15,7 +15,8 @@ export default function Header(props) {
   const mobileMenu = useRef(null);
   const submenuService = useRef(null);
   const submenuIndustry = useRef(null);
-  const mobilesubmenu = useRef(null);
+  const industryMobile = useRef(null);
+  const serviceMobile = useRef(null);
   useEffect(() => {
     setWidth(window.innerWidth);
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -61,17 +62,27 @@ export default function Header(props) {
     };
   }, []);
   // useEffect(() => {
-  //   const handler = (event) => {
+  //   const handlerIndustry = (event) => {
   //     if (
-  //       mobilesubmenu.current &&
-  //       !mobilesubmenu.current.contains(event.target)
+  //       industryMobile.current &&
+  //       !industryMobile.current.contains(event.target)
   //     ) {
-  //       setSubmenumobile(false);
+  //       setShowSubmenuIndustry(false);
   //     }
   //   };
-  //   document.addEventListener("mousedown", handler);
+  //   const handlerService = (event) => {
+  //     if (
+  //       serviceMobile.current &&
+  //       !serviceMobile.current.contains(event.target)
+  //     ) {
+  //       setSubmenumobileService(false);
+  //     }
+  //   };
+  //   document.addEventListener("mousedown", handlerService);
+  //   document.addEventListener("mousedown", handlerIndustry);
   //   return () => {
-  //     document.removeEventListener("mousedown", handler);
+  //     document.removeEventListener("mousedown", handlerService);
+  //     document.removeEventListener("mousedown", handlerIndustry);
   //   };
   // }, []);
   Router.events.on("routeChangeStart", () => {
@@ -345,13 +356,13 @@ export default function Header(props) {
                   className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${
                     props.color
                   } cursor-pointer has-submenu ${submenumebileService && "active"}`}
-                  onClick={() => setSubmenumobileService(!submenumebileService)}
+                  onClick={() =>{ setSubmenumobileService(!submenumebileService);setSubmenumobileIndustry(false);}}
                 >
                   Services
                 </div>
                 {submenumebileService && (
                   <div
-                    ref={mobilesubmenu}
+                    ref={serviceMobile}
                     className="bg-white flex flex-col gap-5 text-left w-full p-5 shadow-custom3"
                   >
                     <Link href="/data-and-artifical-intelligence">
@@ -402,14 +413,14 @@ export default function Header(props) {
                   className={`font-poppins text-[18px] p-5 font-medium relative w-full text-${
                     props.color
                   } cursor-pointer has-submenu ${submenumebileIndustry && "active"}`}
-                  onClick={() => setSubmenumobileIndustry(!submenumebileIndustry)}
+                  onClick={() => {setSubmenumobileIndustry(!submenumebileIndustry);setSubmenumobileService(false)}}
                 >
                   Industries 
                 </div>
                 {submenumebileIndustry && (
                   <div
                     // onMouseOver={() => setShowSubmenu(true)}
-                    ref={mobilesubmenu}
+                    ref={industryMobile}
                     className="bg-white flex flex-col gap-5 text-left w-full p-5 shadow-custom3"
                   >
                     <Link href="">
