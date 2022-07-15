@@ -78,6 +78,8 @@ export default function Header(props) {
     setShow(false);
     setShowSubmenuService(false);
     setShowSubmenuIndustry(false);
+    setSubmenumobileIndustry(false);
+    setSubmenumobileService(false);
   });
 
   const toggleMenu = () => {
